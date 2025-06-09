@@ -38,21 +38,37 @@
     }
   }
   
-  // Spacing variants - Improved for better consistency
+  // Spacing variants
   &--spacing-sm {
     padding: var(--spacing-xl) 0;
+    
+    @media (max-width: var(--breakpoint-mobile)) {
+      padding: var(--spacing-lg) 0;
+    }
   }
   
   &--spacing-md {
-    padding: var(--spacing-xxl) 0;
+    padding: var(--section-spacing-mobile) 0;
+    
+    @media (max-width: var(--breakpoint-mobile)) {
+      padding: calc(var(--section-spacing-mobile) * 0.75) 0;
+    }
   }
   
   &--spacing-lg {
-    padding: calc(var(--spacing-xxl) * 1.5) 0;
+    padding: var(--section-spacing) 0;
+    
+    @media (max-width: var(--breakpoint-mobile)) {
+      padding: var(--section-spacing-mobile) 0;
+    }
   }
   
   &--spacing-xl {
-    padding: calc(var(--spacing-xxl) * 2) 0;
+    padding: calc(var(--section-spacing) * 1.5) 0;
+    
+    @media (max-width: var(--breakpoint-mobile)) {
+      padding: calc(var(--section-spacing-mobile) * 1.25) 0;
+    }
   }
   
   // Container is now handled by global .container class
@@ -66,7 +82,7 @@
   }
   
   &__title {
-    font-size: var(--font-size-heading-2);
+    font-size: var(--font-size-h2);
     font-weight: var(--font-weight-bold);
     margin: 0 0 var(--spacing-md);
     color: var(--text-primary);
@@ -85,99 +101,60 @@
       background-color: var(--color-primary);
       border-radius: 2px;
     }
+    
+    @media (max-width: var(--breakpoint-mobile)) {
+      font-size: calc(var(--font-size-h2) * 0.85);
+      margin-bottom: var(--spacing-sm);
+    }
   }
   
   &__subtitle {
     font-size: var(--font-size-large);
     color: var(--text-secondary);
-    margin: var(--spacing-lg) 0 0;
+    margin: var(--spacing-xl) 0 0;
     max-width: 600px;
     margin-left: auto;
     margin-right: auto;
     line-height: var(--line-height-body);
     font-weight: var(--font-weight-regular);
+    
+    @media (max-width: var(--breakpoint-mobile)) {
+      font-size: var(--font-size-body);
+      margin-bottom: var(--spacing-lg);
+    }
   }
   
   &__content {
     width: 100%;
+    
+    // Prevent horizontal overflow
+    @media (max-width: var(--breakpoint-mobile)) {
+      overflow-x: hidden;
+    }
+  }
+  
+  // Container handling
+  &__container {
+    max-width: var(--container-max-width);
+    margin: 0 auto;
+    padding: 0 var(--container-padding);
+    
+    @media (max-width: var(--breakpoint-mobile)) {
+      padding: 0 var(--container-padding-mobile);
+    }
   }
   
   // Responsive adjustments
   @media (max-width: var(--breakpoint-tablet)) {
-    &--spacing-sm {
-      padding: var(--spacing-lg) 0;
-    }
-    
-    &--spacing-md {
-      padding: var(--spacing-xl) 0;
-    }
-    
-    &--spacing-lg {
-      padding: var(--spacing-xxl) 0;
-    }
-    
-    &--spacing-xl {
-      padding: calc(var(--spacing-xxl) * 1.5) 0;
-    }
-    
-    // Container padding handled by global container system
-    
     &__header {
       margin-bottom: var(--spacing-xl);
     }
-    
-    &__title {
-      font-size: var(--font-size-heading-3);
-      
-      &:after {
-        bottom: -10px;
-        width: 50px;
-        height: 2px;
-      }
-    }
-    
-    &__subtitle {
-      font-size: var(--font-size-body);
-      margin-top: var(--spacing-md);
-    }
   }
   
-  @media (max-width: var(--breakpoint-mobile)) {
-    &--spacing-sm {
-      padding: var(--spacing-md) 0;
-    }
-    
-    &--spacing-md {
-      padding: var(--spacing-lg) 0;
-    }
-    
-    &--spacing-lg {
-      padding: var(--spacing-xl) 0;
-    }
-    
-    &--spacing-xl {
-      padding: var(--spacing-xxl) 0;
-    }
-    
-    // Container padding handled by global container system
-    
-    &__header {
-      margin-bottom: var(--spacing-lg);
-    }
-    
-    &__title {
-      font-size: var(--font-size-h3);
-      
-      &:after {
-        bottom: -8px;
-        width: 40px;
-        height: 2px;
-      }
-    }
-    
-    &__subtitle {
-      font-size: var(--font-size-body);
-      margin-top: var(--spacing-sm);
+  // Mobile-specific adjustments for transparent header design
+  @media (max-width: 768px) {
+    &--bg-light {
+      background-color: transparent !important;
     }
   }
 }

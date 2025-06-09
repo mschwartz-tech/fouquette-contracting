@@ -124,13 +124,7 @@ const ServicesPage = () => {
         backgroundImage={pageData.hero.backgroundImage}
         overlay={pageData.hero.overlay}
         height="medium"
-      >
-        <div className="hero-intro-text">
-          <p>
-            {pageData.introduction.content}
-          </p>
-        </div>
-      </Hero>
+      />
 
 
 

@@ -155,31 +155,6 @@ const BookingPage = () => {
               showServiceField={true}
             />
           </div>
-
-          <div className="booking-info-container">
-            <Card className="booking-info-card" elevation={2}>
-              <h3 className="booking-info-title">What to Expect</h3>
-              <p className="booking-info-text">
-                Our consultations are thorough and informative, designed to give you all the information 
-                you need to make confident decisions about your project. During your consultation, we will:
-              </p>
-              <ul className="booking-info-list">
-                <li>Assess your property and project area</li>
-                <li>Discuss your goals, preferences, and budget</li>
-                <li>Share design ideas and material options</li>
-                <li>Answer any questions you may have</li>
-                <li>Take measurements and photos as needed</li>
-                <li>Discuss timeline and project logistics</li>
-              </ul>
-              <div className="booking-info-note">
-                <h4 className="booking-info-note-title">Please Note:</h4>
-                <p className="booking-info-note-text">
-                  Consultations typically take 30-60 minutes, depending on project complexity. 
-                  There's absolutely no obligation to proceed with the project after the consultation.
-                </p>
-              </div>
-            </Card>
-          </div>
         </div>
       </Section>
 

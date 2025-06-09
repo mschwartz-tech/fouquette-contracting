@@ -191,9 +191,23 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    border-radius: 50%;
     
     &:hover {
       color: var(--color-primary);
+      background-color: var(--color-overlay-light);
+    }
+    
+    &:focus {
+      outline: 2px solid var(--color-primary);
+      outline-offset: 2px;
+    }
+    
+    @media (max-width: var(--breakpoint-mobile)) {
+      width: var(--mobile-touch-target);
+      height: var(--mobile-touch-target);
+      top: 10px;
+      right: 10px;
     }
   }
   
@@ -218,12 +232,31 @@
       background-color: var(--color-primary);
     }
     
+    &:focus {
+      outline: 2px solid var(--color-primary);
+      outline-offset: 2px;
+    }
+    
     &--prev {
       left: 20px;
     }
     
     &--next {
       right: 20px;
+    }
+    
+    @media (max-width: var(--breakpoint-mobile)) {
+      width: var(--mobile-touch-target);
+      height: var(--mobile-touch-target);
+      font-size: 20px;
+      
+      &--prev {
+        left: 10px;
+      }
+      
+      &--next {
+        right: 10px;
+      }
     }
   }
   
@@ -241,15 +274,36 @@
   // Responsive adjustments
   @media (max-width: var(--breakpoint-tablet)) {
     grid-template-columns: repeat(2, 1fr) !important;
+    gap: var(--spacing-md);
   }
   
   @media (max-width: var(--breakpoint-mobile)) {
     grid-template-columns: 1fr !important;
+    gap: var(--spacing-sm);
     
-    &__nav-btn {
-      width: 40px;
-      height: 40px;
-      font-size: 18px;
+    &__item {
+      // Better aspect ratio for mobile
+      padding-bottom: 66.67%; // 3:2 aspect ratio
+    }
+    
+    &__lightbox-content {
+      padding: var(--spacing-md);
+    }
+    
+    &__lightbox-img {
+      max-height: 70vh; // Reduced for mobile
+    }
+    
+    &__lightbox-title {
+      font-size: var(--font-size-small);
+      padding: var(--spacing-xs) var(--spacing-sm);
+      bottom: -30px;
+    }
+    
+    &__counter {
+      bottom: -30px;
+      padding: var(--spacing-xs) var(--spacing-sm);
+      font-size: var(--font-size-small);
     }
   }
 }

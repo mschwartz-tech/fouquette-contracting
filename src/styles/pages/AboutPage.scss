@@ -35,6 +35,10 @@
   justify-content: center;
   padding: var(--spacing-xl);
   background-color: var(--color-overlay-light);
+  
+  @media (max-width: var(--breakpoint-mobile)) {
+    padding: var(--spacing-md);
+  }
 }
 
 .about-hero-content {
@@ -80,6 +84,15 @@
   @media (max-width: var(--breakpoint-tablet)) {
     grid-template-columns: 1fr;
     gap: var(--spacing-lg);
+    text-align: center;
+    justify-items: center;
+    padding: var(--spacing-xl) var(--spacing-md);
+  }
+  
+  @media (max-width: var(--breakpoint-mobile)) {
+    gap: var(--spacing-lg);
+    padding: var(--spacing-xl) var(--spacing-md);
+    text-align: center;
   }
 }
 
@@ -87,6 +100,19 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  
+  @media (max-width: var(--breakpoint-tablet)) {
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    max-width: 600px;
+  }
+  
+  @media (max-width: var(--breakpoint-mobile)) {
+    align-items: center;
+    text-align: center;
+    padding: 0;
+  }
 }
 
 .company-title {
@@ -95,7 +121,11 @@
   color: var(--text-primary);
   
   @media (max-width: var(--breakpoint-mobile)) {
-    font-size: var(--font-size-heading-3);
+    font-size: var(--font-size-heading-2);
+    margin-bottom: var(--spacing-lg);
+    font-weight: var(--font-weight-bold);
+    text-align: center;
+    line-height: 1.2;
   }
 }
 
@@ -110,6 +140,12 @@
     &:last-child {
       margin-bottom: 0;
     }
+    
+    @media (max-width: var(--breakpoint-mobile)) {
+      text-align: center;
+      line-height: 1.6;
+      margin-bottom: var(--spacing-lg);
+    }
   }
 }
 
@@ -123,8 +159,10 @@
     order: -1;
   }
   
-  @media (max-width: var(--breakpoint-mobile)) {
-    min-height: 300px;
+  @media (max-width: 768px) {
+    display: none !important; // Hide image on mobile
+    visibility: hidden !important;
+    opacity: 0 !important;
   }
 }
 
@@ -133,6 +171,12 @@
   height: 100%;
   object-fit: cover;
   border-radius: var(--border-radius);
+  
+  @media (max-width: 768px) {
+    display: none !important; // Hide image on mobile
+    visibility: hidden !important;
+    opacity: 0 !important;
+  }
 }
 
 // Values Section
@@ -155,6 +199,12 @@
   
   &:hover {
     transform: translateY(-5px);
+  }
+  
+  @media (max-width: var(--breakpoint-mobile)) {
+    &:hover {
+      transform: none; // Disable hover on mobile
+    }
   }
 }
 
@@ -194,11 +244,21 @@
   flex-wrap: wrap;
   gap: var(--spacing-lg);
   padding: var(--spacing-lg) 0;
+  
+  @media (max-width: var(--breakpoint-mobile)) {
+    gap: var(--spacing-md);
+    padding: var(--spacing-md) 0;
+  }
 }
 
 .stat-item {
   text-align: center;
   min-width: 150px;
+  
+  @media (max-width: var(--breakpoint-mobile)) {
+    flex: 1 1 calc(50% - var(--spacing-sm)); // Two columns on mobile
+    min-width: 0;
+  }
 }
 
 .stat-value {
@@ -206,6 +266,10 @@
   font-weight: var(--font-weight-bold);
   margin-bottom: var(--spacing-xs);
   color: var(--color-white);
+  
+  @media (max-width: var(--breakpoint-mobile)) {
+    font-size: calc(var(--font-size-heading-2) * 0.85);
+  }
 }
 
 .stat-label {
@@ -235,6 +299,12 @@
   &:hover {
     transform: translateY(-5px);
   }
+  
+  @media (max-width: var(--breakpoint-mobile)) {
+    &:hover {
+      transform: none; // Disable hover on mobile
+    }
+  }
 }
 
 .team-image-container {
@@ -259,6 +329,10 @@
   flex-grow: 1;
   display: flex;
   flex-direction: column;
+  
+  @media (max-width: var(--breakpoint-mobile)) {
+    padding: var(--spacing-sm);
+  }
 }
 
 .team-name {
@@ -301,6 +375,20 @@
   &:hover {
     transform: translateX(5px);
   }
+  
+  @media (max-width: var(--breakpoint-mobile)) {
+    padding: var(--spacing-sm);
+    
+    &:hover {
+      transform: none; // Disable hover on mobile
+    }
+    
+    // Add tap feedback
+    &:active {
+      background-color: var(--color-light-gray);
+      transform: scale(0.98);
+    }
+  }
 }
 
 .process-number {
@@ -316,6 +404,13 @@
   font-weight: var(--font-weight-bold);
   border-radius: 50%;
   margin-right: var(--spacing-md);
+  
+  @media (max-width: var(--breakpoint-mobile)) {
+    width: 40px;
+    height: 40px;
+    font-size: var(--font-size-body);
+    margin-right: var(--spacing-sm);
+  }
 }
 
 .process-content {
@@ -340,6 +435,10 @@
   text-align: center;
   max-width: 800px;
   margin: 0 auto;
+  
+  @media (max-width: var(--breakpoint-mobile)) {
+    padding: 0 var(--container-padding-mobile);
+  }
 }
 
 .about-cta-title {
@@ -379,6 +478,76 @@
     .button {
       width: 100%;
       max-width: 280px;
+    }
+  }
+}
+
+/* Force hide founder image on mobile devices - multiple approaches for better compatibility */
+@media (max-width: 768px) {
+  .company-section .founder-image-container,
+  .company-section .founder-image-container img,
+  .company-section .founder-image {
+    display: none !important;
+    visibility: hidden !important;
+    opacity: 0 !important;
+    width: 0 !important;
+    height: 0 !important;
+  }
+}
+
+/* Additional mobile device coverage */
+@media screen and (max-width: 900px) {
+  .founder-image-container {
+    display: none !important;
+  }
+}
+
+/* Comprehensive mobile styling for Our Story section */
+@media (max-width: 768px) {
+  // Force center alignment for the entire company section
+  .section .container .company-section {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    text-align: center !important;
+    padding: var(--spacing-xl) var(--spacing-md) !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    gap: 0 !important;
+  }
+  
+  .section .container .company-section .company-content {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    text-align: center !important;
+    width: 100% !important;
+    max-width: 500px !important;
+    margin: 0 auto !important;
+    padding: 0 !important;
+  }
+  
+  .section .container .company-section .company-content .company-title {
+    text-align: center !important;
+    font-size: var(--font-size-heading-2) !important;
+    margin-bottom: var(--spacing-lg) !important;
+    width: 100% !important;
+    line-height: 1.2 !important;
+    font-weight: var(--font-weight-bold) !important;
+  }
+  
+  .section .container .company-section .company-content .company-text {
+    text-align: center !important;
+    width: 100% !important;
+    
+    p {
+      text-align: center !important;
+      margin-bottom: var(--spacing-lg) !important;
+      line-height: 1.6 !important;
+      
+      &:last-child {
+        margin-bottom: 0 !important;
+      }
     }
   }
 }

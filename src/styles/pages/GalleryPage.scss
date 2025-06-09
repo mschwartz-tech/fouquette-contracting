@@ -31,6 +31,10 @@
   margin: 0 auto;
   padding: 0 var(--spacing-md);
   color: var(--color-white);
+  
+  @media (max-width: var(--breakpoint-mobile)) {
+    padding: 0 var(--container-padding-mobile);
+  }
 }
 
 .gallery-hero-title {
@@ -107,6 +111,21 @@
     color: var(--color-white);
     border-color: var(--color-primary);
   }
+  
+  @media (max-width: var(--breakpoint-mobile)) {
+    // Ensure minimum touch target
+    min-height: var(--mobile-touch-target);
+    padding: var(--spacing-sm) var(--spacing-md);
+    font-size: var(--font-size-body);
+    
+    // Add tap highlight
+    -webkit-tap-highlight-color: rgba(255, 102, 0, 0.1);
+    
+    &:active {
+      background-color: var(--color-light-gray);
+      transform: scale(0.95);
+    }
+  }
 }
 
 // Gallery Grid (extends the base ImageGallery component)
@@ -122,6 +141,11 @@
   font-size: var(--font-size-body);
   background-color: var(--color-light-gray);
   border-radius: var(--border-radius);
+  
+  @media (max-width: var(--breakpoint-mobile)) {
+    padding: var(--spacing-lg);
+    margin: var(--spacing-md);
+  }
 }
 
 // CTA Section
@@ -129,6 +153,10 @@
   text-align: center;
   max-width: 800px;
   margin: 0 auto;
+  
+  @media (max-width: var(--breakpoint-mobile)) {
+    padding: 0 var(--container-padding-mobile);
+  }
 }
 
 .gallery-cta-title {
@@ -250,6 +278,14 @@
     &:hover {
       background-color: var(--color-secondary-hover);
       color: var(--color-white);
+    }
+  }
+  
+  @media (max-width: var(--breakpoint-mobile)) {
+    min-height: var(--mobile-button-height);
+    
+    &:hover {
+      transform: none;
     }
   }
 }

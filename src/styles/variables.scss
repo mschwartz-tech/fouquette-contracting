@@ -87,6 +87,11 @@
   --section-spacing: 60px;
   --section-spacing-mobile: 40px;
   
+  // Mobile-specific spacing (new additions)
+  --mobile-touch-target: 44px; // Minimum touch target size
+  --mobile-input-height: 48px; // Larger input height for mobile
+  --mobile-button-height: 48px; // Larger button height for mobile
+  
   // Grid System
   --grid-gap: 1rem;
   --grid-gap-sm: 0.5rem;
@@ -95,6 +100,7 @@
   
   // Layout
   --header-offset: 80px;
+  --mobile-header-offset: 75px;
   --footer-height: auto;
   
   // Borders & Corners
@@ -148,6 +154,8 @@
   // Navigation
   --header-height: 80px;
   --header-height-scrolled: 60px;
+  --mobile-header-height: 75px;
+  --mobile-header-height-scrolled: 60px;
   --mobile-menu-breakpoint: 768px;
   
   // Icons

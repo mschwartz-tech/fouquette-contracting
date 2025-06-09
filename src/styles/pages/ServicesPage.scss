@@ -84,6 +84,10 @@
   align-items: center;
   scroll-margin-top: 120px; // For anchor links with fixed header
   
+  @media (max-width: 768px) {
+    scroll-margin-top: 20px; // Minimal offset for transparent mobile header
+  }
+  
   &--reverse {
     .service-image-container {
       order: 2;
@@ -99,19 +103,39 @@
     gap: var(--spacing-xl);
     text-align: center;
     
+    // On mobile, always show content first, then image below
+    .service-content {
+      order: 1 !important;
+    }
+    
+    .service-image-container {
+      order: 2 !important;
+    }
+    
     &--reverse {
       .service-image-container {
-        order: 1;
+        order: 2 !important; // Override reverse order on mobile
       }
       
       .service-content {
-        order: 2;
+        order: 1 !important; // Content always first on mobile
       }
     }
   }
   
   @media (max-width: var(--breakpoint-mobile)) {
     gap: var(--spacing-lg);
+    text-align: center;
+    
+    // Ensure professional mobile layout with content first
+    .service-content {
+      order: 1 !important;
+      margin-bottom: var(--spacing-md);
+    }
+    
+    .service-image-container {
+      order: 2 !important;
+    }
   }
 }
 
@@ -130,10 +154,20 @@
   
   @media (max-width: var(--breakpoint-tablet)) {
     min-height: 350px;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
   }
   
   @media (max-width: var(--breakpoint-mobile)) {
-    min-height: 300px;
+    min-height: 250px;
+    max-width: 100%;
+    margin: var(--spacing-lg) auto 0;
+    border-radius: var(--border-radius);
+    
+    &:hover {
+      box-shadow: var(--shadow-level-2); // Reduce hover effect on mobile
+    }
   }
 }
 
@@ -155,6 +189,17 @@
   
   @media (max-width: var(--breakpoint-tablet)) {
     align-items: center;
+    text-align: center;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  @media (max-width: var(--breakpoint-mobile)) {
+    align-items: center;
+    text-align: center;
+    padding: 0 var(--spacing-md);
+    max-width: 100%;
   }
 }
 
@@ -211,6 +256,14 @@
   @media (max-width: var(--breakpoint-tablet)) {
     text-align: left;
     max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  @media (max-width: var(--breakpoint-mobile)) {
+    text-align: left;
+    max-width: 350px;
+    margin: 0 auto var(--spacing-xl);
   }
 }
 
@@ -385,5 +438,89 @@
     @media (max-width: var(--breakpoint-mobile)) {
       font-size: var(--font-size-body);
     }
+  }
+}
+
+/* Force mobile service cards to stack content above images */
+@media (max-width: 768px) {
+  .section .container .services-list .service-item,
+  .section .container .services-list .service-item--reverse,
+  .services-list .service-item,
+  .services-list .service-item--reverse {
+    display: flex !important;
+    flex-direction: column !important;
+    grid-template-columns: none !important;
+    grid-template-rows: none !important;
+    gap: var(--spacing-lg) !important;
+    text-align: center !important;
+    align-items: center !important;
+    padding: 0 var(--spacing-md) !important;
+    width: 100% !important;
+  }
+  
+  .section .container .services-list .service-item .service-content,
+  .section .container .services-list .service-item--reverse .service-content,
+  .services-list .service-item .service-content,
+  .services-list .service-item--reverse .service-content {
+    order: 1 !important;
+    width: 100% !important;
+    max-width: 500px !important;
+    margin: 0 auto !important;
+    text-align: center !important;
+    align-items: center !important;
+    display: flex !important;
+    flex-direction: column !important;
+  }
+  
+  .section .container .services-list .service-item .service-image-container,
+  .section .container .services-list .service-item--reverse .service-image-container,
+  .services-list .service-item .service-image-container,
+  .services-list .service-item--reverse .service-image-container {
+    order: 2 !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: var(--spacing-lg) auto 0 !important;
+    min-height: 250px !important;
+  }
+}
+
+/* Comprehensive mobile styling for Services page */
+@media (max-width: var(--breakpoint-mobile)) {
+  // Improve mobile button styling in service cards
+  .service-content .button {
+    margin-top: var(--spacing-lg);
+    padding: var(--spacing-md) var(--spacing-xl);
+    font-size: var(--font-size-body);
+    font-weight: var(--font-weight-bold);
+    border-radius: var(--border-radius);
+    min-height: 48px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: auto;
+    max-width: 280px;
+    box-shadow: var(--shadow-level-1);
+    align-self: center;
+  }
+  
+  // Improve service title mobile styling
+  .service-title {
+    margin-bottom: var(--spacing-lg) !important;
+    line-height: 1.2 !important;
+    text-align: center !important;
+  }
+  
+  // Improve service description mobile styling
+  .service-description {
+    text-align: center !important;
+    line-height: 1.6 !important;
+    margin-bottom: var(--spacing-lg) !important;
+  }
+  
+  // Improve features title mobile styling
+  .service-features-title {
+    text-align: center !important;
+    margin-bottom: var(--spacing-lg) !important;
   }
 }

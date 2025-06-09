@@ -2,7 +2,6 @@ import { Outlet } from 'react-router-dom';
 import { Suspense } from 'react';
 import Header from './Header';
 import Footer from './Footer';
-import SkipLink from '../ui/SkipLink';
 import LoadingSpinner from '../ui/LoadingSpinner';
 
 /**
@@ -15,7 +14,6 @@ import LoadingSpinner from '../ui/LoadingSpinner';
 const MainLayout = () => {
   return (
     <div className="site-wrapper">
-      <SkipLink />
       <Header />
       <main id="main-content" className="main-content">
         <Suspense fallback={

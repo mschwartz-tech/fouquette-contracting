@@ -45,6 +45,16 @@
     }
   }
   
+  // Remove background on mobile for transparent header
+  @media (max-width: 768px) {
+    background-color: transparent !important;
+    
+    // Ensure content is still visible without background
+    &:not(.hero--has-bg-image) {
+      background-color: transparent !important;
+    }
+  }
+  
   // Alignment variants
   &--align-left {
     .hero__content {
@@ -112,35 +122,67 @@
 .hero__logo {
   display: flex;
   justify-content: center;
-  margin-bottom: 0; // Remove bottom margin from logo
-  margin-top: -150px; // Pull logo much closer to top of page
+  margin-bottom: 0;
+  margin-top: -150px;
+  // Add smooth transitions for any size changes
+  transition: margin var(--transition-duration-default) ease;
   
   @media (max-width: var(--breakpoint-tablet)) {
-    margin-top: -120px;
+    margin-top: -100px;
   }
   
   @media (max-width: var(--breakpoint-mobile)) {
-    margin-bottom: 0;
-    margin-top: -80px;
+    margin-bottom: var(--spacing-md);
+    margin-top: 0;
+  }
+  
+  // Landscape phones - adjust spacing
+  @media (max-width: var(--breakpoint-mobile)) and (orientation: landscape) and (max-height: 500px) {
+    margin-bottom: var(--spacing-sm);
+    margin-top: 0;
   }
 }
 
 .hero__logo-image {
-  max-height: 600px; // 5x larger (was 120px)
-  max-width: 1500px;  // 5x larger (was 300px)
+  // Dynamic scaling using viewport units with clamp() for smooth responsiveness
+  max-height: clamp(200px, 35vh, 600px); // Scale between 200px and 600px based on viewport height
+  max-width: clamp(300px, 80vw, 1500px);  // Scale between 300px and 1500px based on viewport width
   width: auto;
   height: auto;
   object-fit: contain;
-  filter: brightness(0) invert(1); // Make logo white when on background image
+  filter: brightness(0) invert(1);
+  // Add smooth scaling transition
+  transition: max-height var(--transition-duration-default) ease, 
+              max-width var(--transition-duration-default) ease;
+  // Improve rendering performance
+  will-change: max-height, max-width;
   
+  // Ensure logo maintains aspect ratio and scales smoothly
   @media (max-width: var(--breakpoint-tablet)) {
-    max-height: 500px; // 5x larger (was 100px)
-    max-width: 1250px;  // 5x larger (was 250px)
+    max-height: clamp(180px, 30vh, 400px); // Slightly smaller range for tablets
+    max-width: clamp(280px, 85vw, 1200px);
   }
   
   @media (max-width: var(--breakpoint-mobile)) {
-    max-height: 400px; // 5x larger (was 80px)
-    max-width: 1000px;  // 5x larger (was 200px)
+    // More aggressive scaling on mobile with viewport-based sizing
+    max-height: clamp(120px, 25vh, 300px); // Scale based on viewport height
+    max-width: clamp(250px, 90vw, 800px);  // Scale based on viewport width
+    
+    // For very small screens, ensure minimum usable size
+    @media (max-height: 600px) {
+      max-height: clamp(100px, 20vh, 200px);
+    }
+    
+    // For very narrow screens
+    @media (max-width: 360px) {
+      max-width: clamp(200px, 95vw, 320px);
+    }
+  }
+  
+  // Landscape phones - optimize for limited height
+  @media (max-width: var(--breakpoint-mobile)) and (orientation: landscape) and (max-height: 500px) {
+    max-height: clamp(80px, 15vh, 150px);
+    max-width: clamp(200px, 70vw, 400px);
   }
 }
 
@@ -190,7 +232,7 @@
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  margin-top: -40px; // Negative margin to pull button closer to logo
+  margin-top: -40px;
   
   .button {
     min-width: 200px;
@@ -198,19 +240,21 @@
   
   @media (max-width: var(--breakpoint-tablet)) {
     gap: var(--spacing-md);
-    margin-top: -30px;
+    margin-top: -20px;
   }
   
   @media (max-width: var(--breakpoint-mobile)) {
     flex-direction: column;
     gap: var(--spacing-md);
     width: 100%;
-    margin-top: -20px;
+    margin-top: 0;
+    padding: 0 var(--spacing-md);
     
     .button {
       width: 100%;
       max-width: 280px;
       min-width: auto;
+      min-height: var(--mobile-button-height);
     }
   }
 }

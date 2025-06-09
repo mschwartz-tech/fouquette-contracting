@@ -13,6 +13,8 @@
 html {
   height: 100%;
   scroll-behavior: smooth;
+  // Prevent horizontal scrolling on mobile
+  overflow-x: hidden;
 }
 
 body {
@@ -25,6 +27,12 @@ body {
   background-color: var(--color-white);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  // Prevent horizontal scrolling
+  overflow-x: hidden;
+  // Improve text rendering on mobile
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  text-size-adjust: 100%;
 }
 
 /* Typography */
@@ -218,15 +226,27 @@ img {
     }
   }
   
+  // Force single column on smaller tablets and mobile
   @media (max-width: var(--breakpoint-tablet-small)) {
-    &--cols-2 {
+    &--cols-6, &--cols-4, &--cols-3, &--cols-2 {
       grid-template-columns: 1fr;
+      gap: var(--grid-gap); // Consistent gap
     }
   }
   
+  // Ensure all grids are single column on mobile devices
   @media (max-width: var(--breakpoint-mobile)) {
     &--cols-6, &--cols-4, &--cols-3, &--cols-2 {
-      grid-template-columns: 1fr;
+      grid-template-columns: 1fr !important; // Use !important to override any specificity issues
+      gap: var(--grid-gap-sm); // Smaller gap on very small screens
+    }
+  }
+  
+  // Additional safety net for very small screens
+  @media (max-width: 480px) {
+    &--cols-6, &--cols-4, &--cols-3, &--cols-2 {
+      grid-template-columns: 1fr !important;
+      gap: var(--spacing-sm);
     }
   }
 }
@@ -439,7 +459,6 @@ img {
   .show-print { display: block !important; }
   
   // Hide navigation and interactive elements
-  .skip-link,
   button:not(.print-button),
   .btn:not(.print-button),
   nav,
@@ -612,4 +631,183 @@ select:focus,
 ::selection {
   background-color: var(--color-primary);
   color: var(--color-white);
+}
+
+
+
+// Mobile-specific viewport fixes
+@media (max-width: var(--breakpoint-mobile)) {
+  // Prevent horizontal scrolling
+  * {
+    max-width: 100vw !important;
+  }
+  
+  // Ensure images don't overflow
+  img {
+    max-width: 100% !important;
+    height: auto !important;
+  }
+  
+  // Fix potential overflow issues
+  .container,
+  .container--wide,
+  .container--narrow {
+    overflow-x: hidden;
+  }
+  
+  // Ensure pre and code blocks don't overflow
+  pre,
+  code {
+    max-width: 100%;
+    overflow-x: auto;
+    word-wrap: break-word;
+  }
+  
+  // Fix table overflow
+  table {
+    display: block;
+    max-width: 100%;
+    overflow-x: auto;
+  }
+  
+  // Improve tap targets for links
+  a {
+    position: relative;
+    
+    // Add padding to small links for better touch targets
+    &:not(.button):not(.btn) {
+      padding: 2px 4px;
+      margin: -2px -4px;
+    }
+  }
+  
+  // Ensure modals and popups fit viewport
+  .modal,
+  .popup,
+  .lightbox {
+    max-width: calc(100vw - var(--spacing-md));
+    max-height: calc(100vh - var(--spacing-md));
+  }
+}
+
+// iOS-specific fixes
+@supports (-webkit-touch-callout: none) {
+  // iOS Safari specific styles
+  body {
+    // Prevent bounce scrolling
+    position: fixed;
+    width: 100%;
+    
+    @media (max-width: var(--breakpoint-mobile)) {
+      position: relative; // Allow normal scrolling on mobile
+    }
+  }
+  
+  // Fix for iOS input zoom
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  input[type="password"],
+  input[type="number"],
+  textarea,
+  select {
+    font-size: 16px !important; // Prevents zoom on focus
+  }
+}
+
+// Android-specific fixes
+@media (hover: none) and (pointer: coarse) {
+  // Remove hover effects on touch devices
+  *:hover {
+    transition: none !important;
+  }
+}
+
+/* Main Layout Styles */
+.site-wrapper {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-content {
+  flex: 1;
+  padding-top: var(--header-offset);
+  
+  @media (max-width: 768px) {
+    padding-top: 0; // Remove all top padding for transparent header design
+  }
+}
+
+/* Mobile-specific overrides for transparent header design */
+@media (max-width: 768px) {
+  // Nuclear approach - remove ALL possible sources of white lines
+  
+  // Remove all light backgrounds
+  .bg-light,
+  .hero.bg-white,
+  .section.bg-white,
+  .section--bg-light,
+  .section--bg-white {
+    background-color: transparent !important;
+    background: transparent !important;
+  }
+  
+  // Remove all borders that could create lines
+  * {
+    border-top: none !important;
+    border-bottom: none !important;
+  }
+  
+  // Specifically target common components - preserve background images
+  .card,
+  .section:not(.section--bg-primary),
+  .container,
+  .hero__container,
+  .section__container,
+  .intro-section,
+  .service-card,
+  .testimonial-card {
+    background-color: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+  }
+  
+  // Ensure primary (orange) sections maintain their background on mobile
+  .section--bg-primary {
+    background-color: var(--color-primary) !important;
+    border: none !important;
+    box-shadow: none !important;
+  }
+  
+  // Hero component - only remove background-color, keep background-image
+  .hero {
+    background-color: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+    // Preserve background-image, background-size, background-position, etc.
+  }
+  
+  // Remove any potential spacing that creates visual lines from non-content elements
+  .section:first-child {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+  }
+  
+  // Ensure proper spacing between hero and first section on mobile
+  .hero + .section,
+  .hero + * {
+    margin-top: var(--spacing-xl) !important;
+    padding-top: var(--spacing-lg) !important;
+  }
+  
+  // Force transparency on body elements
+  body,
+  html,
+  #root,
+  .site-wrapper,
+  .main-content {
+    background: transparent !important;
+    background-color: transparent !important;
+  }
 }

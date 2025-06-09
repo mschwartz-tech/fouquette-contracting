@@ -16,6 +16,21 @@
   
   &.scrolled {
     height: 60px;
+    
+    @media (max-width: 768px) {
+      height: 60px; // Keep consistent with desktop scrolled height
+    }
+  }
+  
+  @media (max-width: 768px) {
+    height: 75px; // Better proportion for mobile
+    background: transparent; // Fully transparent header bar
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+    border-bottom: none;
+    box-shadow: none;
+    // Add safe area support for devices with notches
+    padding-top: env(safe-area-inset-top);
   }
   
   .container {
@@ -25,9 +40,9 @@
     padding-left: calc(var(--container-padding) / 2);
     padding-right: calc(var(--container-padding) / 2);
     
-    @media (max-width: var(--breakpoint-mobile)) {
-      padding-left: calc(var(--container-padding-mobile) / 2);
-      padding-right: calc(var(--container-padding-mobile) / 2);
+    @media (max-width: 768px) {
+      padding-left: var(--spacing-md);
+      padding-right: var(--spacing-md);
     }
   }
   
@@ -36,6 +51,12 @@
     justify-content: space-between;
     align-items: center;
     height: 100%;
+    
+    @media (max-width: 768px) {
+      align-items: center;
+      position: relative;
+      justify-content: flex-end; // Position hamburger menu to the right
+    }
   }
   
   .logo {
@@ -44,6 +65,10 @@
     padding: 0;
     margin: 0;
     line-height: 0;
+    
+    @media (max-width: 768px) {
+      display: none !important; // Hide logo on mobile with higher specificity
+    }
     
     img {
       height: 100%;
@@ -58,35 +83,67 @@
   
   .mobile-menu-toggle {
     display: none;
-    background: none;
-    border: none;
+    background-color: rgba(0, 0, 0, 0.9);
+    border: 1px solid rgba(255, 255, 255, 0.1);
     cursor: pointer;
-    padding: 10px;
+    padding: var(--spacing-sm);
+    min-width: 48px; // Better touch target size
+    min-height: 48px; // Better touch target size
+    border-radius: var(--border-radius);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    // Enhanced visual feedback
+    transition: all var(--transition-duration-fast) ease;
+    position: relative;
+    
+    &:hover {
+      background-color: rgba(0, 0, 0, 0.95);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+      transform: translateY(-1px);
+    }
+    
+    &:active {
+      background-color: rgba(0, 0, 0, 0.85);
+      transform: scale(0.95);
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+    }
+    
+    &:focus {
+      outline: 2px solid var(--color-primary);
+      outline-offset: 2px;
+    }
     
     .hamburger-icon {
       display: block;
-      width: 25px;
-      height: 3px;
-      background-color: var(--color-secondary);
+      width: 24px; // Optimal size for mobile
+      height: 2px;
+      background-color: var(--color-white);
       position: relative;
-      transition: background-color 0.3s;
+      transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+      border-radius: 1px; // Slightly rounded
+      margin: 0; // Reset any inherited margins
+      // Ensure proper vertical centering
+      top: 0;
       
       &:before,
       &:after {
         content: '';
         position: absolute;
+        left: 0;
         width: 100%;
         height: 100%;
-        background-color: var(--color-secondary);
-        transition: transform 0.3s;
+        background-color: var(--color-white);
+        transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+        border-radius: 1px;
       }
       
       &:before {
-        transform: translateY(-8px);
+        transform: translateY(-7px); // Perfect spacing for 24px width
       }
       
       &:after {
-        transform: translateY(8px);
+        transform: translateY(7px); // Perfect spacing for 24px width
       }
     }
   }
@@ -181,52 +238,130 @@
   }
   
   @media (max-width: 768px) {
+    // Define consistent header height variables
+    --mobile-header-height: 75px;
+    --mobile-header-height-scrolled: 60px;
+    
     .mobile-menu-toggle {
-      display: block;
+      display: flex !important; // Override the initial display: none
+      align-items: center;
+      justify-content: center;
+      background-color: rgba(0, 0, 0, 0.95) !important;
+      border: 1px solid rgba(255, 255, 255, 0.15) !important;
+      box-shadow: 0 3px 10px rgba(0, 0, 0, 0.4) !important;
+      
+      // Enhanced mobile touch feedback
+      &:hover {
+        background-color: rgba(0, 0, 0, 1) !important;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5) !important;
+        transform: translateY(-1px);
+      }
+      
+      &:active {
+        background-color: rgba(0, 0, 0, 0.9) !important;
+        transform: scale(0.92);
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4) !important;
+      }
+      
+      .hamburger-icon {
+        // Ensure perfect alignment on mobile
+        flex-shrink: 0;
+      }
     }
     
     .main-navigation {
       position: fixed;
-      top: var(--header-height);
+      top: calc(var(--mobile-header-height) + env(safe-area-inset-top, 0px));
       left: 0;
       width: 100%;
       height: 0;
-      background-color: rgba(255, 255, 255, 0.85);
-      backdrop-filter: blur(12px);
-      -webkit-backdrop-filter: blur(12px);
-      border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+      background-color: rgba(255, 255, 255, 0.98);
+      backdrop-filter: blur(15px);
+      -webkit-backdrop-filter: blur(15px);
+      border-bottom: 1px solid rgba(0, 0, 0, 0.08);
       overflow: hidden;
-      transition: height var(--transition-speed);
-      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+      transition: height var(--transition-speed) ease;
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
       
       &.open {
-        height: calc(100vh - var(--header-height));
+        height: calc(100vh - var(--mobile-header-height) - env(safe-area-inset-top, 0px));
         overflow-y: auto;
+        padding-bottom: env(safe-area-inset-bottom, 16px);
       }
       
       .nav-list {
         flex-direction: column;
-        padding: 20px 0;
+        padding: var(--spacing-md) var(--spacing-md) var(--spacing-md);
         height: auto;
         
         li {
-          margin: 10px 0;
+          margin: 0;
           width: 100%;
           text-align: center;
+          border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+          
+          &:last-child {
+            border-bottom: none;
+          }
+          
+          &:first-child {
+            margin-top: 0;
+          }
           
           a {
-            padding: 15px;
+            padding: var(--spacing-sm) var(--spacing-md);
+            min-height: 44px; // Compact touch target
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 16px; // More compact text size
+            font-weight: var(--font-weight-regular);
+            transition: all var(--transition-duration-fast) ease;
+            border-radius: var(--border-radius);
+            margin: 1px var(--spacing-xs); // Reduced margin for compactness
+            
+            &:after {
+              display: none;
+            }
+            
+            &:hover,
+            &.active {
+              background-color: var(--color-primary-transparent-light);
+              color: var(--color-primary);
+              transform: translateY(-1px);
+            }
           }
           
           &.cta-button {
             margin-left: 0;
-            margin-top: var(--spacing-lg);
-            padding: 0 var(--spacing-lg);
+            margin-top: var(--spacing-md);
+            margin-bottom: var(--spacing-sm);
+            padding: 0 var(--spacing-md);
+            border-bottom: none;
             
             a {
-              display: inline-block;
+              display: inline-flex;
               min-width: 200px;
+              max-width: 280px;
               text-align: center;
+              border-radius: var(--border-radius);
+              background-color: var(--color-primary);
+              color: var(--color-white);
+              font-weight: var(--font-weight-bold);
+              padding: var(--spacing-sm) var(--spacing-lg);
+              box-shadow: var(--shadow-level-1);
+              font-size: 16px;
+              margin: 0 auto;
+              
+              &:hover {
+                background-color: var(--color-primary-hover);
+                transform: translateY(-2px);
+                box-shadow: var(--shadow-level-3);
+              }
+              
+              &:active {
+                transform: translateY(0);
+              }
             }
           }
         }
@@ -235,12 +370,110 @@
     
     &.scrolled {
       .main-navigation {
-        top: var(--header-height-scrolled);
+        top: calc(var(--mobile-header-height-scrolled) + env(safe-area-inset-top, 0px));
         
         &.open {
-          height: calc(100vh - var(--header-height-scrolled));
+          height: calc(100vh - var(--mobile-header-height-scrolled) - env(safe-area-inset-top, 0px));
         }
       }
+    }
+  }
+  
+  // Additional improvements for very small screens
+  @media (max-width: 320px) {
+    .mobile-menu-toggle {
+      min-width: 44px; // Slightly smaller on very small screens
+      min-height: 44px;
+      padding: var(--spacing-xs);
+      
+      .hamburger-icon {
+        width: 22px; // Slightly smaller for tiny screens
+        
+        &:before {
+          transform: translateY(-6px); // Adjusted spacing
+        }
+        
+        &:after {
+          transform: translateY(6px); // Adjusted spacing
+        }
+      }
+    }
+    
+    .main-navigation {
+      .nav-list {
+        padding: var(--spacing-sm) var(--spacing-sm) var(--spacing-sm);
+        
+        li {
+          a {
+            padding: var(--spacing-xs) var(--spacing-sm);
+            min-height: 40px;
+            font-size: 15px;
+            margin: 1px var(--spacing-xs);
+          }
+          
+          &.cta-button {
+            margin-top: var(--spacing-sm);
+            margin-bottom: var(--spacing-xs);
+            
+            a {
+              min-width: 180px;
+              padding: var(--spacing-xs) var(--spacing-md);
+              font-size: 15px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// Force hide logo on all mobile devices - additional specificity
+@media (max-width: 768px) {
+  .site-header {
+    // Remove all visual elements that could create lines
+    background: transparent !important;
+    border: none !important;
+    border-bottom: none !important;
+    border-top: none !important;
+    box-shadow: none !important;
+    backdrop-filter: none !important;
+    -webkit-backdrop-filter: none !important;
+    outline: none !important;
+    
+    // Remove any pseudo-elements that might create lines
+    &:before,
+    &:after {
+      display: none !important;
+    }
+  }
+  
+  .site-header .logo {
+    display: none !important;
+    visibility: hidden !important;
+    opacity: 0 !important;
+  }
+  
+  .site-header .header-content {
+    justify-content: flex-end !important;
+    border: none !important;
+    box-shadow: none !important;
+    
+    // Remove any pseudo-elements
+    &:before,
+    &:after {
+      display: none !important;
+    }
+  }
+  
+  .site-header .container {
+    border: none !important;
+    box-shadow: none !important;
+    outline: none !important;
+    
+    // Remove any pseudo-elements
+    &:before,
+    &:after {
+      display: none !important;
     }
   }
 }

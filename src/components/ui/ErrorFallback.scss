@@ -10,6 +10,14 @@
   &--center {
     min-height: 300px;
   }
+  
+  @media (max-width: var(--breakpoint-mobile)) {
+    padding: var(--spacing-md);
+    
+    &--center {
+      min-height: 250px;
+    }
+  }
 }
 
 .error-fallback__content {
@@ -67,10 +75,17 @@
   @media (max-width: var(--breakpoint-mobile)) {
     flex-direction: column;
     gap: var(--spacing-sm);
+    width: 100%;
     
     .error-fallback__retry-button,
     .error-fallback__home-button {
       width: 100%;
+      min-height: var(--mobile-button-height);
+    }
+    
+    // Ensure all buttons in error fallback have proper touch targets
+    .button {
+      min-height: var(--mobile-button-height);
     }
   }
 }
