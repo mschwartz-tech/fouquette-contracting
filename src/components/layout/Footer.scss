@@ -1,0 +1,125 @@
+@use '../../styles/variables';
+
+.site-footer {
+  background-color: var(--color-secondary);
+  color: var(--color-white);
+  padding: 60px 0 20px;
+  
+  a {
+    color: var(--color-white);
+    text-decoration: none;
+    transition: color var(--transition-speed);
+    
+    &:hover {
+      color: var(--color-primary);
+    }
+  }
+  
+  h3 {
+    color: var(--color-primary);
+    margin-bottom: 20px;
+    font-size: 22px;
+  }
+  
+  .footer-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 40px;
+    margin-bottom: 40px;
+  }
+  
+  .footer-logo {
+    img {
+      max-width: 200px;
+      height: auto;
+    }
+  }
+  
+  .footer-contact {
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      
+      li {
+        margin-bottom: 15px;
+        
+        i {
+          margin-right: 10px;
+          color: var(--color-primary);
+        }
+      }
+    }
+  }
+  
+  .footer-links {
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 15px 20px;
+      
+      li {
+        margin-bottom: 0;
+        
+        i {
+          margin-right: 10px;
+          color: var(--color-primary);
+        }
+      }
+    }
+    
+    @media (max-width: 480px) {
+      ul {
+        grid-template-columns: 1fr;
+        gap: 15px;
+        
+        li {
+          margin-bottom: 15px;
+          
+          &:last-child {
+            margin-bottom: 0;
+          }
+        }
+      }
+    }
+  }
+  
+  .footer-bottom {
+    border-top: 1px solid var(--color-footer-border);
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    .copyright {
+      font-size: 14px;
+      margin: 0;
+    }
+    
+    .privacy-policy {
+      font-size: 14px;
+      margin: 0;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    padding: 40px 0 20px;
+    
+    .footer-content {
+      grid-template-columns: 1fr;
+      gap: 30px;
+    }
+    
+    .footer-bottom {
+      flex-direction: column;
+      text-align: center;
+      
+      .copyright {
+        margin-bottom: 10px;
+      }
+    }
+  }
+}

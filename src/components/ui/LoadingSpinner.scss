@@ -1,0 +1,95 @@
+@use '../../styles/variables';
+
+.loading-spinner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--spacing-md);
+  
+  &--center {
+    min-height: 200px;
+    width: 100%;
+  }
+  
+  &--small {
+    .loading-spinner__spinner {
+      width: 24px;
+      height: 24px;
+    }
+    
+    .loading-spinner__message {
+      font-size: var(--font-size-small);
+    }
+  }
+  
+  &--medium {
+    .loading-spinner__spinner {
+      width: 40px;
+      height: 40px;
+    }
+    
+    .loading-spinner__message {
+      font-size: var(--font-size-body);
+    }
+  }
+  
+  &--large {
+    .loading-spinner__spinner {
+      width: 60px;
+      height: 60px;
+    }
+    
+    .loading-spinner__message {
+      font-size: var(--font-size-large);
+    }
+  }
+}
+
+.loading-spinner__spinner {
+  position: relative;
+  width: 40px;
+  height: 40px;
+}
+
+.loading-spinner__circle {
+  width: 100%;
+  height: 100%;
+  border: 3px solid var(--color-light-gray);
+  border-top-color: var(--color-primary);
+  border-radius: 50%;
+  animation: loading-spin 1s linear infinite;
+}
+
+.loading-spinner__message {
+  margin: 0;
+  color: var(--text-secondary);
+  text-align: center;
+  font-weight: var(--font-weight-regular);
+}
+
+@keyframes loading-spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+// Accessibility improvements
+@media (prefers-reduced-motion: reduce) {
+  .loading-spinner__circle {
+    animation: none;
+    border-top-color: var(--color-primary);
+    border-right-color: var(--color-primary);
+  }
+}
+
+// Dark theme support
+@media (prefers-color-scheme: dark) {
+  .loading-spinner__circle {
+    border-color: var(--color-dark-gray);
+    border-top-color: var(--color-primary);
+  }
+} 

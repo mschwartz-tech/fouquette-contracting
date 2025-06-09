@@ -1,0 +1,78 @@
+{
+  "hero": {
+    "title": "Project Gallery",
+    "subtitle": "Explore our portfolio of completed masonry and construction projects",
+    "backgroundImage": "/images/gallery/gallery-hero.jpg",
+    "overlay": true
+  },
+  "introduction": {
+    "title": "Our Work",
+    "content": "At Fouquette Contracting, we take pride in the quality and craftsmanship of our work. Browse through our gallery to see examples of our completed projects across Minnesota. From stunning fireplaces and custom stonework to full commercial constructions, our portfolio showcases our commitment to excellence and attention to detail."
+  },
+  "categories": [
+    {
+      "id": "all",
+      "name": "All Projects"
+    },
+    {
+      "id": "masonry",
+      "name": "Masonry"
+    },
+    {
+      "id": "fireplaces",
+      "name": "Fireplaces"
+    },
+    {
+      "id": "outdoor",
+      "name": "Outdoor"
+    },
+    {
+      "id": "commercial",
+      "name": "Commercial"
+    },
+    {
+      "id": "residential",
+      "name": "Residential"
+    }
+  ],
+  "featuredProjects": [
+    {
+      "id": "lakeside-fireplace",
+      "title": "Lakeside Fireplace",
+      "description": "Custom stone fireplace with built-in wood storage for a lakeside cabin in northern Minnesota.",
+      "image": "/images/gallery/featured-lakeside-fireplace.jpg",
+      "imageAlt": "Beautiful custom stone fireplace with wood storage in a cozy lakeside cabin setting.",
+      "category": "fireplaces"
+    },
+    {
+      "id": "commercial-facade",
+      "title": "Historic Building Restoration",
+      "description": "Complete restoration of a 1920s brick facade for a commercial building in downtown Saint Paul.",
+      "image": "/images/gallery/featured-commercial-facade.jpg",
+      "imageAlt": "Restored historic commercial building facade showcasing intricate brickwork from the 1920s.",
+      "category": "commercial"
+    }
+  ],
+  "testimonial": {
+    "id": "gallery-testimonial-1",
+    "name": "Michael & Lisa Peterson",
+    "location": "Wayzata, MN",
+    "rating": 5,
+    "text": "The craftsmanship displayed in our new stone fireplace is exceptional. Fouquette Contracting's attention to detail and quality of work exceeded our expectations.",
+    "project": "Stone Fireplace",
+    "date": "2023-04-15",
+    "imageSrc": "https://images.unsplash.com/photo-1600298881974-6be191ceeda1?auto=format&fit=crop&w=600&h=400&q=80"
+  },
+  "cta": {
+    "title": "Have a Project in Mind?",
+    "subtitle": "Contact us today to bring your vision to life",
+    "buttonText": "Get in Touch",
+    "buttonLink": "/contact",
+    "backgroundImage": "/images/gallery/cta-background.jpg"
+  },
+  "seo": {
+    "title": "Project Gallery | Fouquette Contracting | Minnesota Masonry & Construction",
+    "description": "Browse Fouquette Contracting's portfolio of masonry and construction projects throughout Minnesota. See examples of our quality craftsmanship in residential and commercial properties.",
+    "keywords": "masonry projects, construction portfolio, stone fireplace, patio design, retaining walls, commercial construction, Minnesota contractor, project gallery"
+  }
+}

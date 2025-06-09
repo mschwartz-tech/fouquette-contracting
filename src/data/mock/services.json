@@ -1,0 +1,89 @@
+[{
+    "id": "service-1",
+    "title": "Brick Masonry",
+    "shortDescription": "Expert brick installation and repair for residential and commercial properties.",
+    "fullDescription": "Our professional brick masonry services deliver exceptional results for both new construction and renovation projects. We specialize in matching existing brickwork for repairs, creating custom designs, and ensuring proper installation that will stand the test of time. Whether you need a complete brick façade, decorative accents, or repairs to existing brickwork, our skilled masons deliver meticulous craftsmanship.",
+    "mainImageSrc": "/bricklayer_1.png",
+    "mainImageAlt": "Professional bricklayer from Fouquette Contracting demonstrating expert masonry craftsmanship.",
+    "features": [
+      "Custom brick patterns and designs",
+      "Brick repair and restoration",
+      "Brick façades and veneers",
+      "Brick columns and architectural elements",
+      "Decorative brick features"
+    ],
+    "contentSections": [
+      {
+        "type": "text",
+        "title": "Why Choose Brick Masonry?",
+        "content": "Brick is a timeless material that offers durability, beauty, and excellent insulation properties. Our expert masons ensure proper installation techniques for long-lasting results."
+      }
+    ]
+  },
+  {
+    "id": "service-2",
+    "title": "Stone Masonry",
+    "shortDescription": "Beautiful natural stone installations for walls, patios, and architectural elements.",
+    "fullDescription": "Our stone masonry services combine old-world craftsmanship with modern techniques to create stunning stone elements for your property. We work with a variety of natural stones including limestone, granite, bluestone, and fieldstone to craft beautiful, durable structures that complement your home or business. From stone walls and columns to custom fireplaces, we bring your vision to life with precision and attention to detail.",
+    "mainImageSrc": "/stonework_1.png",
+    "mainImageAlt": "Elegant natural stone facade on a luxury home, highlighting skilled stone masonry.",
+    "features": [
+      "Natural stone selection and sourcing",
+      "Stone walls and retaining walls",
+      "Stone patios and walkways",
+      "Decorative stone accents",
+      "Stone fireplaces and chimneys"
+    ],
+    "contentSections": [
+      {
+        "type": "text",
+        "title": "Natural Stone Selection",
+        "content": "We work with premium natural stones sourced for their beauty and durability. Each stone is carefully selected to ensure consistency and quality in your finished project."
+      }
+    ]
+  },
+  {
+    "id": "service-3",
+    "title": "Patios & Walkways",
+    "shortDescription": "Custom designed and expertly installed outdoor living spaces and pathways.",
+    "fullDescription": "Transform your outdoor space with our expertly crafted patios and walkways. We design and install beautiful, functional outdoor areas using a variety of materials including pavers, natural stone, brick, and decorative concrete. Our team considers factors like drainage, traffic patterns, and your aesthetic preferences to create outdoor spaces that enhance your property's appeal and usability for years to come.",
+    "mainImageSrc": "/patio_1.png",
+    "mainImageAlt": "Beautifully designed brick patio with outdoor furniture and landscaping, showing quality craftsmanship.",
+    "features": [
+      "Custom patio design and installation",
+      "Stone and brick walkways",
+      "Paver patios with patterns",
+      "Proper drainage and base preparation",
+      "Outdoor living space integration"
+    ],
+    "contentSections": [
+      {
+        "type": "text",
+        "title": "Designing Your Outdoor Oasis",
+        "content": "A well-designed patio or walkway can significantly enhance your property's usability and appeal. We consider factors like traffic flow, sun exposure, drainage, and your desired aesthetic to create a space that is both beautiful and practical."
+      }
+    ]
+  },
+  {
+    "id": "service-4",
+    "title": "Retaining Walls",
+    "shortDescription": "Functional and attractive retaining walls that prevent erosion and define spaces.",
+    "fullDescription": "Our retaining wall services provide both practical erosion control and beautiful landscape definition. We build structurally sound retaining walls that effectively manage sloped terrain while enhancing your property's appearance. Using materials like natural stone, concrete blocks, or brick, we create walls that complement your landscape design while providing essential support and drainage. From small garden walls to large-scale erosion control projects, we ensure proper construction for lasting performance.",
+    "mainImageSrc": "/retaining_wall.png",
+    "mainImageAlt": "Strong and aesthetically pleasing tiered retaining wall constructed with large landscape blocks.",
+    "features": [
+      "Engineered retaining wall systems",
+      "Natural stone retaining walls",
+      "Terraced retaining walls",
+      "Proper drainage installation",
+      "Erosion control solutions"
+    ],
+    "contentSections": [
+      {
+        "type": "text",
+        "title": "Engineering for Success",
+        "content": "Proper retaining wall construction requires careful engineering and attention to drainage. Our experienced team ensures your wall will provide lasting performance while enhancing your landscape."
+      }
+    ]
+  }
+]

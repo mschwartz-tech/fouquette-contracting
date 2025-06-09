@@ -1,0 +1,136 @@
+@use '../../styles/variables';
+
+/**
+ * Accordion Component Styles
+ * 
+ * Implements the accordion styles according to the design system
+ */
+
+.accordion {
+  width: 100%;
+  border-radius: var(--border-radius);
+  overflow: hidden;
+  
+  &__item {
+    margin-bottom: var(--spacing-sm);
+    border: var(--border-width-thin) solid var(--color-light-gray);
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    transition: box-shadow var(--transition-duration-default) var(--transition-timing-default);
+    
+    &:last-child {
+      margin-bottom: 0;
+    }
+    
+    &--open {
+      box-shadow: var(--shadow-level-1);
+      border-color: var(--color-primary);
+      
+      .accordion__header {
+        border-bottom: var(--border-width-thin) solid var(--color-light-gray);
+      }
+      
+      .accordion__icon {
+        transform: rotate(180deg);
+      }
+    }
+    
+    &:hover {
+      box-shadow: var(--shadow-level-1);
+    }
+  }
+  
+  &__header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--spacing-md);
+    background-color: var(--color-white);
+    cursor: pointer;
+    border: none;
+    text-align: left;
+    font-family: var(--font-family);
+    font-weight: var(--font-weight-bold);
+    font-size: var(--font-size-body);
+    color: var(--text-primary);
+    transition: background-color var(--transition-duration-default) var(--transition-timing-default);
+    
+    &:hover {
+      background-color: var(--color-light-gray);
+    }
+    
+    &:focus {
+      outline: none;
+      box-shadow: 0 0 0 2px var(--color-primary);
+    }
+  }
+  
+  &__title {
+    flex: 1;
+    padding-right: var(--spacing-md);
+  }
+  
+  &__icon {
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transition: transform var(--transition-duration-default) var(--transition-timing-default);
+    
+    &:before,
+    &:after {
+      content: '';
+      position: absolute;
+      background-color: var(--color-primary);
+      top: 50%;
+      left: 0;
+      transform: translateY(-50%);
+    }
+    
+    &:before {
+      width: 100%;
+      height: 2px;
+    }
+    
+    &:after {
+      width: 2px;
+      height: 100%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      transition: opacity var(--transition-duration-default) var(--transition-timing-default);
+      
+      .accordion__item--open & {
+        opacity: 0;
+      }
+    }
+  }
+  
+  &__content {
+    background-color: var(--color-white);
+    overflow: hidden;
+    transition: 
+      max-height var(--transition-duration-default) var(--transition-timing-default),
+      opacity var(--transition-duration-default) var(--transition-timing-default);
+  }
+  
+  &__content-inner {
+    padding: var(--spacing-md);
+    color: var(--text-primary);
+    
+    p {
+      margin: 0;
+      line-height: var(--line-height-body);
+    }
+  }
+  
+  // Responsive adjustments
+  @media (max-width: var(--breakpoint-mobile)) {
+    &__header {
+      padding: var(--spacing-sm);
+    }
+    
+    &__content-inner {
+      padding: var(--spacing-sm);
+    }
+  }
+}

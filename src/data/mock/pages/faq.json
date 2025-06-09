@@ -1,0 +1,60 @@
+{
+  "hero": {
+    "title": "Frequently Asked Questions",
+    "subtitle": "Answers to common questions about our masonry and construction services",
+    "backgroundImage": "/images/faq/faq-hero.jpg",
+    "overlay": true
+  },
+  "introduction": {
+    "title": "Common Questions",
+    "content": "We've compiled answers to the most frequently asked questions about our services, processes, and expertise. If you don't find the information you're looking for, please don't hesitate to contact us directly. Our team is always ready to assist you with any inquiries about your masonry or construction project."
+  },
+  "categories": [
+    {
+      "id": "general",
+      "name": "General Information"
+    },
+    {
+      "id": "services",
+      "name": "Our Services"
+    },
+    {
+      "id": "process",
+      "name": "Project Process"
+    },
+    {
+      "id": "pricing",
+      "name": "Pricing & Payments"
+    },
+    {
+      "id": "maintenance",
+      "name": "Maintenance & Care"
+    }
+  ],
+  "contactSection": {
+    "title": "Still Have Questions?",
+    "content": "If you couldn't find the answer to your question, our team is here to help. Contact us directly and we'll provide the information you need.",
+    "phone": "(651) 555-1234",
+    "email": "info@fouquettecontracting.com",
+    "buttonText": "Contact Us",
+    "buttonLink": "/contact"
+  },
+  "cta": {
+    "title": "Ready to Start Your Project?",
+    "subtitle": "Contact us today for a free consultation and estimate",
+    "primaryCta": {
+      "text": "Request a Quote",
+      "link": "/booking"
+    },
+    "secondaryCta": {
+      "text": "Contact Us",
+      "link": "/contact"
+    },
+    "backgroundImage": "/images/faq/cta-background.jpg"
+  },
+  "seo": {
+    "title": "Frequently Asked Questions | Fouquette Contracting | Minnesota Masonry & Construction",
+    "description": "Find answers to common questions about Fouquette Contracting's masonry and construction services in Minnesota. Learn about our process, pricing, and expertise.",
+    "keywords": "masonry FAQ, construction questions, contractor pricing, project timeline, masonry maintenance, construction process, Minnesota contractor"
+  }
+}

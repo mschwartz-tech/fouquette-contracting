@@ -1,0 +1,193 @@
+// Design System Variables
+// Based on the Design System Directory document
+
+:root {
+  // Color Palette
+  // Primary Colors
+  --color-primary: #FF6600; // True Orange (changed from #FFA500)
+  --color-primary-hover: #E55A00; // Darker orange for hover states
+  --color-primary-active: #CC5200; // Even darker for active states
+  --color-secondary: #000000; // Black
+  --color-secondary-hover: #333333; // Lighter black for hover states
+  --color-secondary-active: #1a1a1a; // Darker for active states
+  --color-black: #000000; // Add explicit black variable
+  
+  // Neutral Colors
+  --color-white: #FFFFFF;
+  --color-light-gray: #F5F5F5;
+  --color-medium-gray: #CCCCCC;
+  --color-dark-gray: #4A4A4A; // Improved contrast from #666666
+  --color-darker-gray: #333333;
+  
+  // Semantic Colors
+  --color-success: #4CAF50;
+  --color-error: #F44336;
+  --color-warning: #FF9800;
+  --color-info: #2196F3;
+  
+  // Additional semantic colors for consistency
+  --color-overlay-light: rgba(0, 0, 0, 0.5);
+  --color-overlay-medium: rgba(0, 0, 0, 0.7);
+  --color-overlay-dark: rgba(0, 0, 0, 0.8);
+  --color-overlay-darker: rgba(0, 0, 0, 0.9);
+  --color-white-transparent: rgba(255, 255, 255, 0.8);
+  --color-white-semi: rgba(255, 255, 255, 0.9);
+  --color-primary-transparent-light: rgba(255, 102, 0, 0.1);
+  --color-primary-transparent-medium: rgba(255, 102, 0, 0.2);
+  --color-border-light: rgba(0, 0, 0, 0.08);
+  --color-border-primary: rgba(255, 102, 0, 0.2);
+  --color-footer-border: rgba(255, 255, 255, 0.1);
+  
+  // Text Colors
+  --text-primary: var(--color-secondary);
+  --text-secondary: var(--color-dark-gray);
+  --text-light: var(--color-white);
+  --text-error: var(--color-error);
+  --text-on-primary: var(--color-white);
+  --text-shadow-default: 0 2px 4px rgba(0, 0, 0, 0.3);
+  --text-shadow-light: 0 1px 2px rgba(0, 0, 0, 0.3);
+  
+  // Typography
+  --font-family: 'Roboto', Arial, Helvetica, sans-serif;
+  --font-weight-regular: 400;
+  --font-weight-bold: 700;
+  
+  // Font Sizes - Add missing variables
+  --font-size-heading-1: 36px;
+  --font-size-heading-2: 28px;
+  --font-size-heading-3: 22px;
+  --font-size-h1: 36px;
+  --font-size-h2: 28px;
+  --font-size-h3: 22px;
+  --font-size-large: 18px;
+  --font-size-body: 16px;
+  --font-size-small: 14px;
+  
+  // Line Heights
+  --line-height-heading: 1.2;
+  --line-height-body: 1.6;
+  
+  // Spacing
+  --spacing-unit: 4px;
+  --spacing-xs: calc(var(--spacing-unit) * 1); // 4px
+  --spacing-sm: calc(var(--spacing-unit) * 2); // 8px
+  --spacing-md: calc(var(--spacing-unit) * 4); // 16px
+  --spacing-lg: calc(var(--spacing-unit) * 6); // 24px
+  --spacing-xl: calc(var(--spacing-unit) * 8); // 32px
+  --spacing-xxl: calc(var(--spacing-unit) * 12); // 48px
+  --spacing-3xl: calc(var(--spacing-unit) * 16); // 64px
+  --spacing-4xl: calc(var(--spacing-unit) * 20); // 80px
+  
+  // Container
+  --container-max-width: 1200px;
+  --container-wide-max-width: 1400px;
+  --content-max-width: 800px;
+  --container-padding: 20px;
+  --container-padding-mobile: 16px;
+  --section-spacing: 60px;
+  --section-spacing-mobile: 40px;
+  
+  // Grid System
+  --grid-gap: 1rem;
+  --grid-gap-sm: 0.5rem;
+  --grid-gap-lg: 2rem;
+  --grid-columns: 12;
+  
+  // Layout
+  --header-offset: 80px;
+  --footer-height: auto;
+  
+  // Borders & Corners
+  --border-radius: 8px;
+  --border-radius-large: 12px;
+  --border-width-thin: 1px;
+  --border-width-medium: 2px;
+  --border-width-thick: 4px;
+  
+  // Shadows
+  --shadow-level-1: 0 2px 4px rgba(0, 0, 0, 0.1);
+  --shadow-level-2: 0 4px 6px rgba(0, 0, 0, 0.1);
+  --shadow-level-3: 0 8px 16px rgba(0, 0, 0, 0.1);
+  --box-shadow: var(--shadow-level-1); // Default box shadow for components
+  
+  // Transitions
+  --transition-duration-fast: 0.2s;
+  --transition-duration-default: 0.3s;
+  --transition-duration-slow: 0.5s;
+  --transition-speed: 0.3s; // Add missing transition-speed variable
+  --transition-timing-default: ease;
+  --transition-timing-entrance: ease-out;
+  --transition-timing-exit: ease-in;
+  --transition-timing-movement: ease-in-out;
+  
+  // Breakpoints
+  --breakpoint-mobile: 576px;
+  --breakpoint-tablet-small: 640px;
+  --breakpoint-tablet: 768px;
+  --breakpoint-tablet-large: 900px;
+  --breakpoint-desktop-small: 992px;
+  --breakpoint-desktop-medium: 1024px;
+  --breakpoint-desktop-large: 1200px;
+  --breakpoint-desktop-xl: 1400px;
+  
+  // Component-Specific
+  // Button
+  --button-height: 40px;
+  --button-padding: 10px 20px;
+  --button-primary-bg: var(--color-primary);
+  --button-primary-text: var(--color-white);
+  --button-secondary-bg: var(--color-secondary);
+  --button-secondary-text: var(--color-white);
+  
+  // Forms
+  --input-height: 40px;
+  --input-padding: 8px 12px;
+  --input-border: 1px solid var(--color-light-gray);
+  --input-focus-border: 2px solid var(--color-primary);
+  
+  // Navigation
+  --header-height: 80px;
+  --header-height-scrolled: 60px;
+  --mobile-menu-breakpoint: 768px;
+  
+  // Icons
+  --icon-size-small: 16px;
+  --icon-size-medium: 24px;
+  --icon-size-large: 32px;
+  
+  // Z-index layers
+  --z-index-header: 100;
+  --z-index-modal: 200;
+  --z-index-dropdown: 150;
+  
+  // Focus
+  --focus-width: 2px;
+  --focus-color: var(--color-primary);
+  
+  // Animation
+  --animation-duration-fast: 0.15s;
+  --animation-duration-normal: 0.3s;
+  --animation-duration-slow: 0.5s;
+  --animation-easing-standard: cubic-bezier(0.4, 0, 0.2, 1);
+  --animation-easing-decelerate: cubic-bezier(0, 0, 0.2, 1);
+  --animation-easing-accelerate: cubic-bezier(0.4, 0, 1, 1);
+  
+  // Loading
+  --loading-overlay-bg: rgba(255, 255, 255, 0.8);
+  --loading-spinner-color: var(--color-primary);
+  
+  // Error states
+  --error-color: var(--color-error);
+  --error-bg: #FFF5F5;
+  --warning-color: var(--color-warning);
+  --warning-bg: #FFFBF0;
+  
+  // Gradients
+  --gradient-primary: linear-gradient(135deg, var(--color-primary), #E55A00);
+  --gradient-overlay: linear-gradient(to top, var(--color-overlay-dark), transparent 60%);
+  --gradient-hero-overlay: linear-gradient(135deg, var(--color-overlay-dark), rgba(0, 0, 0, 0.6));
+  
+  // Form states
+  --form-error-bg: rgba(244, 67, 54, 0.1);
+  --form-success-bg: rgba(76, 175, 80, 0.1);
+}

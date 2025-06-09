@@ -1,0 +1,61 @@
+{
+  "hero": {
+    "title": "Client Testimonials",
+    "subtitle": "What our clients say about our masonry and construction services",
+    "backgroundImage": "/images/testimonials/testimonials-hero.jpg",
+    "overlay": true
+  },
+  "introduction": {
+    "title": "Our Satisfied Clients",
+    "content": "At Fouquette Contracting, we take pride in delivering exceptional results and superior customer service. Don't just take our word for it—read what our clients have to say about their experience working with us. These testimonials reflect our commitment to quality craftsmanship, professionalism, and attention to detail on every project we undertake."
+  },
+  "featuredTestimonial": {
+    "id": "featured-testimonial-1",
+    "name": "James & Maria Williams",
+    "location": "Minneapolis, MN",
+    "rating": 5,
+    "text": "Working with Fouquette Contracting was an excellent experience from start to finish. They transformed our outdated fireplace into a stunning centerpiece for our home. Their team was professional, skilled, and attentive to every detail. We couldn't be happier with the results!",
+    "project": "Interior Fireplace Renovation",
+    "date": "2023-05-20",
+    "imageSrc": "https://images.unsplash.com/photo-1600298881974-6be191ceeda1?auto=format&fit=crop&w=600&h=400&q=80"
+  },
+  "testimonialCategories": [
+    {
+      "id": "all",
+      "name": "All Testimonials"
+    },
+    {
+      "id": "residential",
+      "name": "Residential"
+    },
+    {
+      "id": "commercial",
+      "name": "Commercial"
+    },
+    {
+      "id": "masonry",
+      "name": "Masonry Work"
+    },
+    {
+      "id": "construction",
+      "name": "Construction"
+    }
+  ],
+  "submitSection": {
+    "title": "Share Your Experience",
+    "content": "We value feedback from our clients. If you've recently worked with Fouquette Contracting, we'd love to hear about your experience. Submit your testimonial using the form below, and it may be featured on our website.",
+    "buttonText": "Submit a Testimonial"
+  },
+  "cta": {
+    "title": "Ready to Start Your Project?",
+    "subtitle": "Contact us today for a free consultation and estimate",
+    "buttonText": "Request a Quote",
+    "buttonLink": "/booking",
+    "backgroundImage": "/images/testimonials/cta-background.jpg"
+  },
+  "seo": {
+    "title": "Client Testimonials | Fouquette Contracting | Minnesota Masonry & Construction",
+    "description": "Read what our clients say about Fouquette Contracting's masonry and construction services. Discover why we're the trusted choice for quality craftsmanship in Minnesota.",
+    "keywords": "masonry testimonials, construction reviews, client feedback, customer satisfaction, Minnesota contractor, trusted builder, quality craftsmanship"
+  }
+}

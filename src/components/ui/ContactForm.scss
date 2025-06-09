@@ -1,0 +1,121 @@
+@use '../../styles/variables';
+
+/**
+ * ContactForm Component Styles
+ * 
+ * Implements the form styles according to the design system
+ */
+
+.contact-form {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  
+  &__form {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-md);
+  }
+  
+  &__field {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-xs);
+  }
+  
+  &__label {
+    font-weight: var(--font-weight-bold);
+    font-size: var(--font-size-small);
+    color: var(--text-primary);
+  }
+  
+  &__required {
+    color: var(--color-error);
+  }
+  
+  &__input,
+  &__select,
+  &__textarea {
+    height: var(--input-height);
+    padding: var(--input-padding);
+    border: var(--input-border);
+    border-radius: var(--border-radius);
+    font-family: var(--font-family);
+    font-size: var(--font-size-body);
+    width: 100%;
+    transition: border var(--transition-duration-default) var(--transition-timing-default);
+    
+    &:focus {
+      outline: none;
+      border: var(--input-focus-border);
+    }
+    
+    &--error {
+      border-color: var(--color-error);
+    }
+  }
+  
+  &__textarea {
+    height: auto;
+    min-height: 120px;
+    resize: vertical;
+  }
+  
+  &__error {
+    color: var(--color-error);
+    font-size: var(--font-size-small);
+    margin: 0;
+  }
+  
+  &__submit {
+    margin-top: var(--spacing-lg);
+    align-self: center;
+    min-width: 200px;
+    
+    @media (max-width: var(--breakpoint-mobile)) {
+      align-self: stretch;
+      min-width: auto;
+    }
+  }
+  
+  &__submit-error {
+    padding: var(--spacing-sm);
+    background-color: var(--form-error-bg);
+    border: 1px solid var(--color-error);
+    border-radius: var(--border-radius);
+    color: var(--color-error);
+    font-size: var(--font-size-small);
+    margin-top: var(--spacing-sm);
+  }
+  
+  &__success {
+    text-align: center;
+    padding: var(--spacing-xl) var(--spacing-md);
+    background-color: var(--form-success-bg);
+    border-radius: var(--border-radius);
+    
+    h3 {
+      color: var(--color-success);
+      margin-bottom: var(--spacing-md);
+    }
+    
+    p {
+      margin-bottom: var(--spacing-lg);
+    }
+  }
+  
+  &__reset-button {
+    margin-top: var(--spacing-md);
+  }
+  
+  // Responsive adjustments
+  @media (max-width: var(--breakpoint-mobile)) {
+    &__form {
+      gap: var(--spacing-sm);
+    }
+    
+    &__submit {
+      margin-top: var(--spacing-sm);
+    }
+  }
+}

@@ -1,0 +1,183 @@
+@use '../../styles/variables';
+
+/**
+ * Section Component Styles
+ * 
+ * Implements the section styles according to the design system
+ */
+
+.section {
+  width: 100%;
+  
+  // Background variants
+  &--bg-none {
+    background-color: transparent;
+  }
+  
+  &--bg-light {
+    background-color: var(--color-light-gray);
+  }
+  
+  &--bg-dark {
+    background-color: var(--color-black);
+    color: var(--color-white);
+    
+    .section__title,
+    .section__subtitle {
+      color: var(--color-white);
+    }
+  }
+  
+  &--bg-primary {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    
+    .section__title,
+    .section__subtitle {
+      color: var(--color-white);
+    }
+  }
+  
+  // Spacing variants - Improved for better consistency
+  &--spacing-sm {
+    padding: var(--spacing-xl) 0;
+  }
+  
+  &--spacing-md {
+    padding: var(--spacing-xxl) 0;
+  }
+  
+  &--spacing-lg {
+    padding: calc(var(--spacing-xxl) * 1.5) 0;
+  }
+  
+  &--spacing-xl {
+    padding: calc(var(--spacing-xxl) * 2) 0;
+  }
+  
+  // Container is now handled by global .container class
+  
+  &__header {
+    text-align: center;
+    margin-bottom: var(--spacing-xxl);
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  &__title {
+    font-size: var(--font-size-heading-2);
+    font-weight: var(--font-weight-bold);
+    margin: 0 0 var(--spacing-md);
+    color: var(--text-primary);
+    position: relative;
+    display: inline-block;
+    line-height: var(--line-height-heading);
+    
+    &:after {
+      content: '';
+      position: absolute;
+      bottom: -12px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 60px;
+      height: 3px;
+      background-color: var(--color-primary);
+      border-radius: 2px;
+    }
+  }
+  
+  &__subtitle {
+    font-size: var(--font-size-large);
+    color: var(--text-secondary);
+    margin: var(--spacing-lg) 0 0;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: var(--line-height-body);
+    font-weight: var(--font-weight-regular);
+  }
+  
+  &__content {
+    width: 100%;
+  }
+  
+  // Responsive adjustments
+  @media (max-width: var(--breakpoint-tablet)) {
+    &--spacing-sm {
+      padding: var(--spacing-lg) 0;
+    }
+    
+    &--spacing-md {
+      padding: var(--spacing-xl) 0;
+    }
+    
+    &--spacing-lg {
+      padding: var(--spacing-xxl) 0;
+    }
+    
+    &--spacing-xl {
+      padding: calc(var(--spacing-xxl) * 1.5) 0;
+    }
+    
+    // Container padding handled by global container system
+    
+    &__header {
+      margin-bottom: var(--spacing-xl);
+    }
+    
+    &__title {
+      font-size: var(--font-size-heading-3);
+      
+      &:after {
+        bottom: -10px;
+        width: 50px;
+        height: 2px;
+      }
+    }
+    
+    &__subtitle {
+      font-size: var(--font-size-body);
+      margin-top: var(--spacing-md);
+    }
+  }
+  
+  @media (max-width: var(--breakpoint-mobile)) {
+    &--spacing-sm {
+      padding: var(--spacing-md) 0;
+    }
+    
+    &--spacing-md {
+      padding: var(--spacing-lg) 0;
+    }
+    
+    &--spacing-lg {
+      padding: var(--spacing-xl) 0;
+    }
+    
+    &--spacing-xl {
+      padding: var(--spacing-xxl) 0;
+    }
+    
+    // Container padding handled by global container system
+    
+    &__header {
+      margin-bottom: var(--spacing-lg);
+    }
+    
+    &__title {
+      font-size: var(--font-size-h3);
+      
+      &:after {
+        bottom: -8px;
+        width: 40px;
+        height: 2px;
+      }
+    }
+    
+    &__subtitle {
+      font-size: var(--font-size-body);
+      margin-top: var(--spacing-sm);
+    }
+  }
+}

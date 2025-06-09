@@ -1,0 +1,243 @@
+@use '../../styles/variables';
+
+.hero {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background-color: var(--color-light-gray);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  
+  // Height variants
+  &--height-small {
+    min-height: 300px;
+    
+    @media (max-width: var(--breakpoint-mobile)) {
+      min-height: 250px;
+    }
+  }
+  
+  &--height-medium {
+    min-height: 500px;
+    
+    @media (max-width: var(--breakpoint-mobile)) {
+      min-height: 400px;
+    }
+  }
+  
+  &--height-large {
+    min-height: 700px;
+    
+    @media (max-width: var(--breakpoint-mobile)) {
+      min-height: 500px;
+    }
+  }
+  
+  &--height-full {
+    min-height: 100vh;
+    
+    @media (max-width: var(--breakpoint-mobile)) {
+      min-height: 80vh;
+    }
+  }
+  
+  // Alignment variants
+  &--align-left {
+    .hero__content {
+      text-align: left;
+    }
+  }
+  
+  &--align-center {
+    .hero__content {
+      text-align: center;
+    }
+  }
+  
+  &--align-right {
+    .hero__content {
+      text-align: right;
+    }
+  }
+  
+  // Background image behavior
+  &--has-bg-image {
+    color: var(--color-white);
+    
+    .hero__title,
+    .hero__subtitle {
+      color: var(--color-white);
+      text-shadow: var(--text-shadow-default);
+    }
+  }
+}
+
+.hero__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--color-overlay-light);
+  z-index: 1;
+}
+
+.hero__container {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  max-width: var(--container-max-width);
+  margin: 0 auto;
+  padding: 0 var(--container-padding);
+  
+  @media (max-width: var(--breakpoint-mobile)) {
+    padding: 0 var(--container-padding-mobile);
+  }
+}
+
+.hero__content {
+  max-width: 800px;
+  margin: 0 auto;
+  
+  // Responsive alignment adjustments
+  @media (max-width: var(--breakpoint-mobile)) {
+    text-align: center !important; // Force center alignment on mobile
+  }
+}
+
+.hero__logo {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 0; // Remove bottom margin from logo
+  margin-top: -150px; // Pull logo much closer to top of page
+  
+  @media (max-width: var(--breakpoint-tablet)) {
+    margin-top: -120px;
+  }
+  
+  @media (max-width: var(--breakpoint-mobile)) {
+    margin-bottom: 0;
+    margin-top: -80px;
+  }
+}
+
+.hero__logo-image {
+  max-height: 600px; // 5x larger (was 120px)
+  max-width: 1500px;  // 5x larger (was 300px)
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  filter: brightness(0) invert(1); // Make logo white when on background image
+  
+  @media (max-width: var(--breakpoint-tablet)) {
+    max-height: 500px; // 5x larger (was 100px)
+    max-width: 1250px;  // 5x larger (was 250px)
+  }
+  
+  @media (max-width: var(--breakpoint-mobile)) {
+    max-height: 400px; // 5x larger (was 80px)
+    max-width: 1000px;  // 5x larger (was 200px)
+  }
+}
+
+// Adjust logo styling when there's no background image
+.hero:not(.hero--has-bg-image) {
+  .hero__logo-image {
+    filter: none; // Remove white filter for normal dark logo
+  }
+}
+
+.hero__title {
+  font-size: 48px; // Increased from var(--font-size-h1) which was 36px
+  font-weight: var(--font-weight-bold);
+  line-height: var(--line-height-heading);
+  margin-bottom: var(--spacing-md);
+  color: var(--text-primary);
+  
+  @media (max-width: var(--breakpoint-tablet)) {
+    font-size: 42px; // Increased proportionally
+  }
+  
+  @media (max-width: var(--breakpoint-mobile)) {
+    font-size: 36px; // Increased proportionally
+    margin-bottom: var(--spacing-sm);
+  }
+}
+
+.hero__subtitle {
+  font-size: 24px; // Increased from var(--font-size-large) which was 18px
+  line-height: var(--line-height-body);
+  margin-bottom: var(--spacing-xl);
+  color: var(--text-secondary);
+  opacity: 0.9;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  
+  @media (max-width: var(--breakpoint-mobile)) {
+    font-size: 20px; // Increased from var(--font-size-body) which was 16px
+    margin-bottom: var(--spacing-lg);
+  }
+}
+
+.hero__actions {
+  display: flex;
+  gap: var(--spacing-lg);
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: -40px; // Negative margin to pull button closer to logo
+  
+  .button {
+    min-width: 200px;
+  }
+  
+  @media (max-width: var(--breakpoint-tablet)) {
+    gap: var(--spacing-md);
+    margin-top: -30px;
+  }
+  
+  @media (max-width: var(--breakpoint-mobile)) {
+    flex-direction: column;
+    gap: var(--spacing-md);
+    width: 100%;
+    margin-top: -20px;
+    
+    .button {
+      width: 100%;
+      max-width: 280px;
+      min-width: auto;
+    }
+  }
+}
+
+// Accessibility improvements
+@media (prefers-reduced-motion: reduce) {
+  .hero {
+    background-attachment: scroll !important;
+  }
+}
+
+// Print styles
+@media print {
+  .hero {
+    background-image: none !important;
+    color: var(--text-primary) !important;
+    min-height: auto !important;
+    padding: var(--spacing-lg) 0;
+    
+    .hero__overlay {
+      display: none;
+    }
+    
+    .hero__title,
+    .hero__subtitle {
+      color: var(--text-primary) !important;
+      text-shadow: none !important;
+    }
+  }
+} 

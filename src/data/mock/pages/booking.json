@@ -1,0 +1,198 @@
+{
+  "hero": {
+    "title": "Book a Consultation",
+    "subtitle": "Schedule a meeting with our team to discuss your project",
+    "backgroundImage": "/images/booking/booking-hero.jpg",
+    "overlay": true
+  },
+  "introduction": {
+    "title": "Start Your Project",
+    "content": "Ready to transform your property with quality masonry and construction work? Book a consultation with our team to discuss your project needs, timeline, and budget. We'll provide expert guidance and a detailed quote to help bring your vision to life."
+  },
+  "bookingProcess": {
+    "title": "Booking Process",
+    "steps": [
+      {
+        "number": 1,
+        "title": "Submit Request",
+        "description": "Fill out the booking form with your project details and preferred consultation time."
+      },
+      {
+        "number": 2,
+        "title": "Confirmation",
+        "description": "Receive confirmation of your booking request within 24 hours."
+      },
+      {
+        "number": 3,
+        "title": "Consultation",
+        "description": "Meet with our experts to discuss your project needs and vision."
+      },
+      {
+        "number": 4,
+        "title": "Detailed Proposal",
+        "description": "Receive a comprehensive proposal with pricing and timeline."
+      }
+    ]
+  },
+  "formSettings": {
+    "title": "Booking Request Form",
+    "subtitle": "Please provide the following information to schedule your consultation",
+    "submitButtonText": "Submit Booking Request",
+    "successMessage": "Thank you for your booking request! We'll contact you within 24 hours to confirm your consultation.",
+    "fields": [
+      {
+        "id": "name",
+        "label": "Full Name",
+        "type": "text",
+        "required": true,
+        "placeholder": "Enter your full name"
+      },
+      {
+        "id": "email",
+        "label": "Email Address",
+        "type": "email",
+        "required": true,
+        "placeholder": "Enter your email address"
+      },
+      {
+        "id": "phone",
+        "label": "Phone Number",
+        "type": "tel",
+        "required": true,
+        "placeholder": "Enter your phone number"
+      },
+      {
+        "id": "address",
+        "label": "Project Address",
+        "type": "text",
+        "required": true,
+        "placeholder": "Enter the project location"
+      },
+      {
+        "id": "projectType",
+        "label": "Project Type",
+        "type": "select",
+        "required": true,
+        "options": [
+          "Residential Masonry",
+          "Commercial Masonry",
+          "Fireplace Installation/Renovation",
+          "Outdoor Living Space",
+          "Retaining Wall",
+          "New Construction",
+          "Renovation/Restoration",
+          "Other (please specify)"
+        ]
+      },
+      {
+        "id": "projectDescription",
+        "label": "Project Description",
+        "type": "textarea",
+        "required": true,
+        "placeholder": "Please describe your project in detail"
+      },
+      {
+        "id": "budget",
+        "label": "Estimated Budget",
+        "type": "select",
+        "required": false,
+        "options": [
+          "Under $5,000",
+          "$5,000 - $10,000",
+          "$10,000 - $25,000",
+          "$25,000 - $50,000",
+          "$50,000 - $100,000",
+          "Over $100,000",
+          "Not sure (need guidance)"
+        ]
+      },
+      {
+        "id": "timeline",
+        "label": "Desired Timeline",
+        "type": "select",
+        "required": false,
+        "options": [
+          "As soon as possible",
+          "Within 1 month",
+          "Within 3 months",
+          "Within 6 months",
+          "Flexible/No rush"
+        ]
+      },
+      {
+        "id": "preferredDate",
+        "label": "Preferred Consultation Date",
+        "type": "date",
+        "required": true
+      },
+      {
+        "id": "preferredTime",
+        "label": "Preferred Consultation Time",
+        "type": "select",
+        "required": true,
+        "options": [
+          "Morning (9am - 12pm)",
+          "Afternoon (12pm - 3pm)",
+          "Late Afternoon (3pm - 5pm)"
+        ]
+      },
+      {
+        "id": "referralSource",
+        "label": "How did you hear about us?",
+        "type": "select",
+        "required": false,
+        "options": [
+          "Google Search",
+          "Social Media",
+          "Referral from Friend/Family",
+          "Previous Client",
+          "Home Show/Event",
+          "Other"
+        ]
+      },
+      {
+        "id": "additionalInfo",
+        "label": "Additional Information",
+        "type": "textarea",
+        "required": false,
+        "placeholder": "Any additional details or questions?"
+      }
+    ]
+  },
+  "testimonial": {
+    "id": "booking-testimonial-1",
+    "name": "Robert & Karen Thompson",
+    "location": "Eden Prairie, MN",
+    "rating": 5,
+    "text": "The consultation process with Fouquette Contracting was incredibly helpful. They listened to our ideas, provided expert advice, and delivered a detailed proposal that matched our vision and budget perfectly.",
+    "project": "Consultation Experience",
+    "date": "2023-06-10",
+    "imageSrc": "https://images.unsplash.com/photo-1600298881974-6be191ceeda1?auto=format&fit=crop&w=600&h=400&q=80"
+  },
+  "faq": {
+    "title": "Booking FAQs",
+    "questions": [
+      {
+        "question": "Is there a fee for the consultation?",
+        "answer": "No, our initial consultations are complimentary. We provide a free, no-obligation consultation to discuss your project needs and provide guidance."
+      },
+      {
+        "question": "How long does a typical consultation last?",
+        "answer": "Most consultations take approximately 60-90 minutes, depending on the complexity of your project and the number of questions you have."
+      },
+      {
+        "question": "Should I prepare anything for the consultation?",
+        "answer": "If available, it's helpful to have any relevant plans, photos of inspiration, or a list of questions/priorities for your project. However, this isn't required—we're happy to start from scratch."
+      },
+      {
+        "question": "How soon can I schedule a consultation?",
+        "answer": "Typically, we can schedule consultations within 1-2 weeks, depending on the current season and demand. We'll work to accommodate your preferred date and time."
+      }
+    ]
+  },
+  "seo": {
+    "title": "Book a Consultation | Fouquette Contracting | Minnesota Masonry & Construction",
+    "description": "Schedule a free consultation with Fouquette Contracting for your masonry or construction project in Minnesota. Get expert advice and a detailed quote for your vision.",
+    "keywords": "book consultation, masonry quote, construction estimate, project planning, Minnesota contractor, free consultation, construction consultation"
+  }
+}

@@ -1,0 +1,86 @@
+{
+  "hero": {
+    "title": "Professional Masonry & Construction Services",
+    "subtitle": "Quality craftsmanship for residential and commercial properties",
+    "backgroundImage": "/services_hero_1.png",
+    "overlay": true
+  },
+  "introduction": {
+    "title": "Our Services",
+    "content": "Fouquette Contracting offers a comprehensive range of masonry and construction services. With over 20 years of experience, we provide expert solutions for residential and commercial clients throughout Minnesota. Our team of skilled professionals ensures high-quality craftsmanship and exceptional attention to detail on every project."
+  },
+  "featuredCategories": [
+    {
+      "id": "masonry",
+      "title": "Masonry Services",
+      "image": "/images/services/masonry-services.jpg",
+      "description": "Expert masonry solutions from new construction to restoration"
+    },
+    {
+      "id": "construction",
+      "title": "Construction Services",
+      "image": "/images/services/construction-services.jpg",
+      "description": "Complete construction services for your next project"
+    },
+    {
+      "id": "specialty",
+      "title": "Specialty Projects",
+      "image": "/images/services/specialty-projects.jpg",
+      "description": "Custom designs and unique specialty installations"
+    }
+  ],
+  "process": {
+    "title": "Our Service Process",
+    "description": "Our streamlined process ensures a smooth experience from initial consultation to project completion.",
+    "steps": [
+      {
+        "number": "1",
+        "title": "Consultation",
+        "description": "We begin with a thorough consultation to understand your needs and project requirements."
+      },
+      {
+        "number": "2",
+        "title": "Custom Proposal",
+        "description": "Our team provides a detailed proposal tailored to your specific project needs and budget."
+      },
+      {
+        "number": "3",
+        "title": "Project Planning",
+        "description": "We create a comprehensive plan including materials, timeline, and construction details."
+      },
+      {
+        "number": "4",
+        "title": "Expert Execution",
+        "description": "Our skilled craftsmen execute the project with precision and attention to detail."
+      },
+      {
+        "number": "5",
+        "title": "Final Inspection",
+        "description": "We conduct a thorough inspection to ensure every detail meets our high standards."
+      },
+      {
+        "number": "6",
+        "title": "Customer Satisfaction",
+        "description": "We follow up to ensure complete satisfaction with the finished project."
+      }
+    ]
+  },
+  "testimonial": {
+    "quote": "Fouquette Contracting exceeded our expectations in every way. Their attention to detail and quality craftsmanship transformed our outdated fireplace into a stunning centerpiece for our home.",
+    "author": "Sarah Johnson",
+    "location": "Edina, MN",
+    "image": "/images/testimonials/sarah-j.jpg"
+  },
+  "cta": {
+    "title": "Ready to Start Your Project?",
+    "subtitle": "Contact us today for a free consultation and estimate",
+    "buttonText": "Request a Quote",
+    "buttonLink": "/booking",
+    "backgroundImage": "/images/services/cta-background.jpg"
+  },
+  "seo": {
+    "title": "Services | Fouquette Contracting | Minnesota Masonry & Construction",
+    "description": "Explore Fouquette Contracting's professional masonry and construction services for residential and commercial properties throughout Minnesota. Quality craftsmanship guaranteed.",
+    "keywords": "masonry services, construction services, brick work, stone work, Minnesota contractor, fireplace construction, retaining walls, hardscaping, commercial construction"
+  }
+}

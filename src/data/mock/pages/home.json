@@ -1,0 +1,114 @@
+{
+  "heroSection": {
+    "title": "",
+    "subtitle": "",
+    "logo": "/Hero Logo.png",
+    "logoAlt": "Fouquette Contracting Logo",
+    "ctaText": "Request a Free Estimate",
+    "ctaLink": "/booking",
+    "imageSrc": "/Hero_Background_2.png",
+    "imageAlt": "Beautiful stone house exterior showcasing excellent masonry craftsmanship with natural stone work",
+    "backgroundOverlay": true
+  },
+  "introSection": {
+    "title": "Fouquette Contracting",
+    "content": "Based in Minnesota, Fouquette Contracting specializes in high-quality masonry and construction services for both residential and commercial clients. With over 25 years of experience, we take pride in our exceptional craftsmanship, attention to detail, and commitment to customer satisfaction. From elegant brick patios to durable retaining walls, our skilled team delivers projects that enhance the beauty and value of your property for years to come.",
+    "imageSrc": "/home_section_1.png",
+    "imageAlt": "Beautiful residential brick patio showcasing Fouquette Contracting's expert masonry craftsmanship",
+    "ctaText": "Learn About Our Company",
+    "ctaLink": "/about"
+  },
+  "featuredServices": {
+    "title": "Our Services",
+    "subtitle": "Expert Masonry Solutions for Every Project",
+    "services": [
+      {
+        "id": "service-1",
+        "title": "Brick Masonry",
+        "description": "Expert brick installation and repair for residential and commercial properties.",
+        "imageSrc": "/bricklayer_1.png",
+        "imageAlt": "Professional bricklayer from Fouquette Contracting demonstrating expert masonry craftsmanship.",
+        "link": "/services#brick-masonry"
+      },
+      {
+        "id": "service-4",
+        "title": "Retaining Walls",
+        "description": "Functional and attractive retaining walls that prevent erosion and define spaces.",
+        "imageSrc": "/retaining_wall.png",
+        "imageAlt": "Strong and aesthetically pleasing tiered retaining wall constructed with large landscape blocks.",
+        "link": "/services#retaining-walls"
+      }
+    ],
+    "ctaText": "View All Services",
+    "ctaLink": "/services"
+  },
+  "projectsSection": {
+    "title": "Recent Projects",
+    "subtitle": "Browse Our Quality Craftsmanship",
+    "projects": [
+      {
+        "id": "gallery-1",
+        "title": "Custom Brick Patio",
+        "imageSrc": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=800&h=600&q=80",
+        "imageAlt": "Spacious custom brick patio in a backyard, featuring a herringbone pattern and outdoor dining set.",
+        "category": "Patios"
+      },
+      {
+        "id": "gallery-2",
+        "title": "Natural Stone Retaining Wall",
+        "imageSrc": "https://images.unsplash.com/photo-1416879595882-3373a0480b5b?auto=format&fit=crop&w=800&h=600&q=80",
+        "imageAlt": "Artistically crafted natural stone retaining wall with integrated steps and plantings.",
+        "category": "Retaining Walls"
+      },
+      {
+        "id": "gallery-9",
+        "title": "Commercial Storefront",
+        "imageSrc": "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=800&h=600&q=80",
+        "imageAlt": "Modern commercial building storefront with impressive stone and brick facade.",
+        "category": "Commercial"
+      }
+    ],
+    "ctaText": "View Gallery",
+    "ctaLink": "/gallery"
+  },
+  "testimonialsSection": {
+    "title": "Client Testimonials",
+    "subtitle": "What Our Customers Say",
+    "testimonials": [
+      {
+        "id": "testimonial-1",
+        "name": "Michael Johnson",
+        "text": "Fouquette Contracting built our custom brick patio and fire pit last summer, and we couldn't be happier with the results. The team was professional from start to finish, arriving on time and completing the work exactly as scheduled.",
+        "location": "Minneapolis, MN",
+        "rating": 5
+      },
+      {
+        "id": "testimonial-5",
+        "name": "Robert Martinez",
+        "text": "We reached out to Fouquette Contracting for a rather complex project involving a combination of stone steps, a brick walkway, and lighting installation. From the initial consultation through completion, their expertise was evident.",
+        "location": "Maple Grove, MN",
+        "rating": 5
+      }
+    ],
+    "ctaText": "Read More Testimonials",
+    "ctaLink": "/testimonials"
+  },
+  "ctaSection": {
+    "title": "Ready to Start Your Project?",
+    "subtitle": "Contact us today for a free consultation and estimate.",
+    "primaryCta": {
+      "text": "Request an Estimate",
+      "link": "/booking"
+    },
+    "secondaryCta": {
+      "text": "Contact Us",
+      "link": "/contact"
+    },
+    "backgroundSrc": "/Hero_Background_2.png"
+  },
+  "seo": {
+    "title": "Fouquette Contracting | Expert Masonry & Construction Services in Minnesota",
+    "description": "Fouquette Contracting provides high-quality masonry and construction services in Minnesota, specializing in brick and stone work, patios, retaining walls, and more.",
+    "keywords": "masonry, construction, brick work, stone masonry, patios, retaining walls, Minnesota contractor"
+  }
+}

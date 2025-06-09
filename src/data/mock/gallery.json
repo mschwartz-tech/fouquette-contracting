@@ -1,0 +1,42 @@
+[
+  {
+    "id": "gallery-1",
+    "src": "/Stamped_Walkway_&_Stoop.jpeg",
+    "alt": "Stamped concrete walkway and stoop with decorative pattern",
+    "title": "Stamped Walkway & Stoop",
+    "category": "Patios",
+    "featured": true
+  },
+  {
+    "id": "gallery-2",
+    "src": "/Outdoor_Stone_Fireplace.jpeg",
+    "alt": "Custom outdoor stone fireplace in backyard setting",
+    "title": "Outdoor Stone Fireplace",
+    "category": "Outdoor Living",
+    "featured": true
+  },
+  {
+    "id": "gallery-3",
+    "src": "/gallery_3.png",
+    "alt": "Custom indoor stone fireplace with expert craftsmanship",
+    "title": "Indoor Stone Fireplace",
+    "category": "Stone Masonry",
+    "featured": true
+  },
+  {
+    "id": "gallery-4",
+    "src": "/gallery_4.jpeg",
+    "alt": "Professional exterior stonework and masonry",
+    "title": "Exterior Stonework",
+    "category": "Commercial",
+    "featured": true
+  },
+  {
+    "id": "gallery-5",
+    "src": "/gallery_5.jpeg",
+    "alt": "Expert exterior stonework craftsmanship",
+    "title": "Exterior Stonework",
+    "category": "Residential",
+    "featured": true
+  }
+]

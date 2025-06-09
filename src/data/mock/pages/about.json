@@ -1,0 +1,141 @@
+{
+  "heroSection": {
+    "title": "About Fouquette Contracting",
+    "subtitle": "Building Excellence with Integrity Since 1998",
+    "imageSrc": "https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&w=1920&h=600&q=80",
+    "imageAlt": "High-angle view of a beautifully constructed stone patio and outdoor living area by Fouquette Contracting."
+  },
+  "companySection": {
+    "title": "Our Story",
+    "content": "Fouquette Contracting was built on a simple mission: to provide exceptional masonry and construction services with unwavering integrity and craftsmanship. We have grown into one of Minnesota's most respected masonry and construction companies, serving both residential and commercial clients throughout the Twin Cities area and beyond.\n\nOur commitment to quality remains at the heart of everything we do. We maintain personalized service and meticulous attention to detail in every project we undertake. Whether it's a small repair or a large commercial installation, each project receives the same level of care and expertise, ensuring beautiful, durable results that enhance your property and exceed your expectations.",
+    "imageSrc": "/Dalton_Image.jpg",
+    "imageAlt": "Dalton, founder of Fouquette Contracting, smiling confidently."
+  },
+  "valuesSection": {
+    "title": "Our Values",
+    "values": [
+      {
+        "title": "Craftsmanship",
+        "description": "We take pride in preserving the time-honored techniques of masonry while incorporating modern methods for durability and efficiency. Every brick, stone, and joint is placed with precision and care.",
+        "icon": "hammer"
+      },
+      {
+        "title": "Integrity",
+        "description": "We believe in honest communication, transparent pricing, and delivering on our promises. We treat each project as if it were for our own home or business.",
+        "icon": "shield"
+      },
+      {
+        "title": "Excellence",
+        "description": "We never settle for \"good enough.\" From materials selection to final cleanup, we maintain rigorous standards at every stage of your project.",
+        "icon": "star"
+      },
+      {
+        "title": "Service",
+        "description": "We prioritize clear communication, respectful interactions, and reliable scheduling. Our goal is to make your construction experience as smooth and stress-free as possible.",
+        "icon": "handshake"
+      }
+    ]
+  },
+  "teamSection": {
+    "title": "Our Team",
+    "subtitle": "Meet the Skilled Professionals Behind Fouquette Contracting",
+    "team": [
+      {
+        "name": "James Fouquette",
+        "title": "Founder & Master Mason",
+        "bio": "With over 30 years of masonry experience, James founded Fouquette Contracting with a vision of excellence and integrity in every project. He personally oversees quality control and trains all team members in traditional masonry techniques.",
+        "imageSrc": "https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=300&h=300&q=80",
+        "imageAlt": "Professional headshot of James Fouquette, Founder & Master Mason."
+      },
+      {
+        "name": "Sarah Fouquette",
+        "title": "Operations Manager",
+        "bio": "Sarah manages the day-to-day operations of Fouquette Contracting, ensuring smooth project coordination, client communication, and business administration. Her organizational skills and attention to detail keep projects on track and clients informed.",
+        "imageSrc": "https://images.unsplash.com/photo-1494790108755-2616c6eb4484?auto=format&fit=crop&w=300&h=300&q=80",
+        "imageAlt": "Professional headshot of Sarah Fouquette, Operations Manager."
+      },
+      {
+        "name": "Michael Daniels",
+        "title": "Project Manager",
+        "bio": "Mike brings 15 years of construction management experience to Fouquette Contracting. He expertly coordinates resources, schedules, and quality control to ensure projects are completed on time, within budget, and to our high standards.",
+        "imageSrc": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=300&h=300&q=80",
+        "imageAlt": "Professional headshot of Michael Daniels, Project Manager."
+      },
+      {
+        "name": "Robert Johnson",
+        "title": "Senior Mason",
+        "bio": "With a reputation for exceptional craftsmanship, Robert leads our most complex masonry projects. His expertise in both traditional and contemporary techniques allows him to tackle challenging designs with precision and creativity.",
+        "imageSrc": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=300&h=300&q=80",
+        "imageAlt": "Professional headshot of Robert Johnson, Senior Mason."
+      }
+    ]
+  },
+  "experienceSection": {
+    "title": "Our Experience",
+    "stats": [
+      {
+        "value": "25+",
+        "label": "Years in Business"
+      },
+      {
+        "value": "1500+",
+        "label": "Completed Projects"
+      },
+      {
+        "value": "800+",
+        "label": "Satisfied Clients"
+      },
+      {
+        "value": "15+",
+        "label": "Skilled Team Members"
+      }
+    ]
+  },
+  "processSection": {
+    "title": "Our Process",
+    "steps": [
+      {
+        "number": "01",
+        "title": "Consultation",
+        "description": "We begin with an on-site consultation to understand your vision, assess the site, and discuss options that fit your needs and budget."
+      },
+      {
+        "number": "02",
+        "title": "Design & Proposal",
+        "description": "We develop a detailed proposal including design concepts, material recommendations, timeline, and transparent pricing."
+      },
+      {
+        "number": "03",
+        "title": "Planning & Scheduling",
+        "description": "Once approved, we coordinate all aspects of your project including permits, material ordering, and scheduling to ensure efficient execution."
+      },
+      {
+        "number": "04",
+        "title": "Construction",
+        "description": "Our skilled team executes your project with precision, keeping you informed of progress and addressing any questions throughout the process."
+      },
+      {
+        "number": "05",
+        "title": "Completion & Follow-up",
+        "description": "After thorough cleanup and a final walkthrough, we provide care instructions and follow up to ensure your complete satisfaction."
+      }
+    ]
+  },
+  "ctaSection": {
+    "title": "Ready to Work With Us?",
+    "content": "Contact Fouquette Contracting today to discuss your masonry or construction project. We look forward to bringing your vision to life with quality craftsmanship and exceptional service.",
+    "primaryCta": {
+      "text": "Request a Consultation",
+      "link": "/booking"
+    },
+    "secondaryCta": {
+      "text": "View Our Work",
+      "link": "/gallery"
+    }
+  },
+  "seo": {
+    "title": "About Fouquette Contracting | Minnesota Masonry Experts",
+    "description": "Learn about Fouquette Contracting's 25+ years of excellence in masonry and construction services throughout Minnesota. Our team, values, and commitment to quality craftsmanship.",
+    "keywords": "about Fouquette Contracting, Minnesota masonry company, masonry experts, construction company history, quality masonry services"
+  }
+}

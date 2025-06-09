@@ -1,0 +1,62 @@
+[
+  {
+    "id": "testimonial-1",
+    "name": "Michael Johnson",
+    "location": "Minneapolis, MN",
+    "rating": 5,
+    "text": "Fouquette Contracting built our custom brick patio and fire pit last summer, and we couldn't be happier with the results. The team was professional from start to finish, arriving on time and completing the work exactly as scheduled. The craftsmanship is exceptional - every brick perfectly placed. We've received countless compliments from neighbors and friends, and the space has become our favorite spot to entertain.",
+    "project": "Brick Patio and Fire Pit",
+    "date": "2024-07-15",
+    "imageSrc": "https://picsum.photos/100/100?random=201"
+  },
+  {
+    "id": "testimonial-2",
+    "name": "Sarah Williams",
+    "location": "St. Paul, MN",
+    "rating": 5,
+    "text": "After getting quotes from several masonry companies, we chose Fouquette Contracting to build our stone retaining wall. It was definitely the right decision. They took the time to understand exactly what we wanted, provided excellent suggestions to improve our original plan, and delivered outstanding quality work. The wall has completely transformed our sloped yard into usable garden space, and it looks absolutely beautiful.",
+    "project": "Stone Retaining Wall",
+    "date": "2024-06-22",
+    "imageSrc": "https://picsum.photos/100/100?random=202"
+  },
+  {
+    "id": "testimonial-3",
+    "name": "David Brown",
+    "location": "Eden Prairie, MN",
+    "rating": 5,
+    "text": "We hired Fouquette Contracting to repair the brick facade on our 1930s home, and the results exceeded our expectations. They were able to perfectly match our historic brick and mortar, making the repairs virtually invisible. The crew was respectful of our property, cleaned up thoroughly each day, and completed the work right on schedule. Their attention to detail and commitment to quality craftsmanship is impressive.",
+    "project": "Brick Facade Restoration",
+    "date": "2024-05-10",
+    "imageSrc": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=100&h=100&q=80"
+  },
+  {
+    "id": "testimonial-4",
+    "name": "Jennifer Miller",
+    "location": "Bloomington, MN",
+    "rating": 4,
+    "text": "Fouquette Contracting installed a stamped concrete driveway for our home, and we love how it turned out. The pattern and color perfectly complement our house, and the quality of work is excellent. There was a slight delay due to weather, but they communicated clearly about the schedule change and worked efficiently to minimize the impact. The final result was worth the short wait, and we'd definitely use them again.",
+    "project": "Stamped Concrete Driveway",
+    "date": "2024-08-05",
+    "imageSrc": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=100&h=100&q=80"
+  },
+  {
+    "id": "testimonial-5",
+    "name": "Robert Martinez",
+    "location": "Maple Grove, MN",
+    "rating": 5,
+    "text": "We reached out to Fouquette Contracting for a rather complex project involving a combination of stone steps, a brick walkway, and lighting installation. From the initial consultation through completion, their expertise was evident. They provided creative solutions to some challenging aspects of our sloped yard and executed the work with precision. The finished project has dramatically improved both the functionality and appearance of our property.",
+    "project": "Stone Steps and Brick Walkway",
+    "date": "2024-07-28",
+    "imageSrc": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=100&h=100&q=80"
+  },
+  {
+    "id": "testimonial-6",
+    "name": "Amanda Wilson",
+    "location": "Wayzata, MN",
+    "rating": 5,
+    "text": "Fouquette Contracting completed a natural stone fireplace for our outdoor living area, and it's absolutely stunning. The stonework is gorgeous, with each piece thoughtfully placed to create a beautiful pattern. The team was knowledgeable and professional throughout the project, and they were always willing to answer our questions and address any concerns. The fireplace has become the centerpiece of our backyard and has significantly extended our outdoor season in Minnesota.",
+    "project": "Outdoor Stone Fireplace",
+    "date": "2024-06-15",
+    "imageSrc": "https://images.unsplash.com/photo-1494790108755-2616c6eb4484?auto=format&fit=crop&w=100&h=100&q=80"
+  }
+]

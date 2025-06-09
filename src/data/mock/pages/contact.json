@@ -1,0 +1,150 @@
+{
+  "hero": {
+    "title": "Contact Us",
+    "subtitle": "Get in touch with our team for questions, quotes, or support",
+    "backgroundImage": "/images/contact/contact-hero.jpg",
+    "overlay": true
+  },
+  "introduction": {
+    "title": "Get in Touch",
+    "content": "We're here to answer any questions you may have about our masonry and construction services. Whether you're interested in starting a new project, need maintenance for existing work, or just want to learn more about what we do, our team is ready to assist you."
+  },
+  "contactInfo": {
+    "phone": {
+      "label": "Phone",
+      "value": "(651) 555-1234",
+      "icon": "phone"
+    },
+    "email": {
+      "label": "Email",
+      "value": "info@fouquettecontracting.com",
+      "icon": "email"
+    },
+    "address": {
+      "label": "Office Address",
+      "value": "123 Main Street, Suite 200\nSaint Paul, MN 55101",
+      "icon": "location"
+    },
+    "hours": {
+      "label": "Business Hours",
+      "value": "Monday-Friday: 8am-5pm\nSaturday: 9am-2pm\nSunday: Closed",
+      "icon": "clock"
+    }
+  },
+  "mapSettings": {
+    "latitude": 44.9537,
+    "longitude": -93.0900,
+    "zoom": 15,
+    "markerTitle": "Fouquette Contracting"
+  },
+  "formSettings": {
+    "title": "Send Us a Message",
+    "subtitle": "Fill out the form below and we'll get back to you as soon as possible",
+    "submitButtonText": "Send Message",
+    "successMessage": "Thank you for your message! We'll respond within 1-2 business days.",
+    "fields": [
+      {
+        "id": "name",
+        "label": "Full Name",
+        "type": "text",
+        "required": true,
+        "placeholder": "Enter your full name"
+      },
+      {
+        "id": "email",
+        "label": "Email Address",
+        "type": "email",
+        "required": true,
+        "placeholder": "Enter your email address"
+      },
+      {
+        "id": "phone",
+        "label": "Phone Number",
+        "type": "tel",
+        "required": false,
+        "placeholder": "Enter your phone number"
+      },
+      {
+        "id": "subject",
+        "label": "Subject",
+        "type": "select",
+        "required": true,
+        "options": [
+          "General Inquiry",
+          "Request a Quote",
+          "Project Consultation",
+          "Current Project Support",
+          "Employment Opportunities",
+          "Other"
+        ]
+      },
+      {
+        "id": "message",
+        "label": "Message",
+        "type": "textarea",
+        "required": true,
+        "placeholder": "How can we help you?"
+      }
+    ]
+  },
+  "socialMedia": {
+    "title": "Connect With Us",
+    "platforms": [
+      {
+        "name": "Facebook",
+        "url": "https://facebook.com/fouquettecontracting",
+        "icon": "facebook"
+      },
+      {
+        "name": "Instagram",
+        "url": "https://instagram.com/fouquettecontracting",
+        "icon": "instagram"
+      },
+      {
+        "name": "LinkedIn",
+        "url": "https://linkedin.com/company/fouquette-contracting",
+        "icon": "linkedin"
+      },
+      {
+        "name": "YouTube",
+        "url": "https://youtube.com/channel/fouquette-contracting",
+        "icon": "youtube"
+      }
+    ]
+  },
+  "faq": {
+    "title": "Common Questions",
+    "questions": [
+      {
+        "question": "Do you provide free estimates?",
+        "answer": "Yes, we provide free estimates for all projects. Contact us to schedule an on-site evaluation and receive a detailed quote."
+      },
+      {
+        "question": "What areas do you serve in Minnesota?",
+        "answer": "We serve the entire Twin Cities metro area and surrounding communities within a 60-mile radius of Saint Paul."
+      },
+      {
+        "question": "How quickly can you start a new project?",
+        "answer": "Our project timeline varies depending on the season and current workload. Typically, we can begin new projects within 2-6 weeks of contract signing."
+      }
+    ]
+  },
+  "cta": {
+    "title": "Ready to Start Your Project?",
+    "subtitle": "Schedule a consultation with our team today",
+    "primaryCta": {
+      "text": "Book a Consultation",
+      "link": "/booking"
+    },
+    "secondaryCta": {
+      "text": "View Our Services",
+      "link": "/services"
+    },
+    "backgroundImage": "/images/contact/cta-background.jpg"
+  },
+  "seo": {
+    "title": "Contact Us | Fouquette Contracting | Minnesota Masonry & Construction",
+    "description": "Get in touch with Fouquette Contracting for all your masonry and construction needs in Minnesota. Contact us for quotes, consultations, or support.",
+    "keywords": "contact masonry contractor, Minnesota construction company, request quote, masonry consultation, construction support, Saint Paul contractor"
+  }
+}

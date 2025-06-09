@@ -1,0 +1,25 @@
+[build]
+  publish = "dist"
+  command = "npm run build"
+
+# Production context
+[context.production]
+  environment = { NODE_VERSION = "20" }
+
+# Deploy Preview context
+[context.deploy-preview]
+  environment = { NODE_VERSION = "20" }
+
+# Branch Deploy context
+[context.branch-deploy]
+  environment = { NODE_VERSION = "20" }
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+
+[dev]
+  command = "npm run dev"
+  port = 5173
+  targetPort = 5173
