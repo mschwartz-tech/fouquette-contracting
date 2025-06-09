@@ -5,7 +5,6 @@ import { dataService } from '../services/dataService';
 import type { ContactFormData } from '../data/models';
 import ContactForm from '../components/ui/ContactForm';
 import Section from '../components/ui/Section';
-import Card from '../components/ui/Card';
 import Hero from '../components/ui/Hero';
 import '../styles/pages/BookingPage.scss';
 

@@ -9,7 +9,6 @@ export { default as Hero } from './Hero';
 export { default as ImageGallery } from './ImageGallery';
 export { default as LoadingSpinner } from './LoadingSpinner';
 export { default as Section } from './Section';
-export { default as SkipLink } from './SkipLink';
 
 // Export types
 export type { ButtonProps, ButtonVariant, ButtonSize } from './Button';
