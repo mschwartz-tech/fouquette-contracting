@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import { Helmet } from 'react-helmet-async';
 import { useLocation } from 'react-router-dom';
 import { dataService } from '../services/dataService';
-import type { GalleryImage as GalleryImageType, GalleryPage as GalleryPageType } from '../data/models';
+import type { GalleryImage as GalleryImageType } from '../data/models';
 import ImageGallery from '../components/ui/ImageGallery';
 import Button from '../components/ui/Button';
 import Section from '../components/ui/Section';
