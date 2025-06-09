@@ -18,7 +18,6 @@ import '../styles/pages/GalleryPage.scss';
 const GalleryPage = () => {
   const [images, setImages] = useState<GalleryImageType[]>([]);
   const [loading, setLoading] = useState(true);
-  const [galleryPageData, setGalleryPageData] = useState<GalleryPageType | null>(null);
   const location = useLocation();
 
   useEffect(() => {
@@ -34,17 +33,6 @@ const GalleryPage = () => {
     };
 
     fetchImages();
-
-    const fetchPageData = async () => {
-      try {
-        const pageData = await dataService.getGalleryPageData();
-        setGalleryPageData(pageData);
-      } catch (error) {
-        console.error('Error fetching gallery page data:', error);
-      }
-    };
-
-    fetchPageData();
   }, []);
 
   if (loading) {

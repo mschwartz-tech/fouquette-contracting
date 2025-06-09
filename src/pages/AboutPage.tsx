@@ -4,7 +4,6 @@ import { useLocation } from 'react-router-dom';
 import { dataService } from '../services/dataService';
 import type { AboutPage as AboutPageType } from '../data/models';
 import Button from '../components/ui/Button';
-import Card from '../components/ui/Card';
 import Section from '../components/ui/Section';
 import Hero from '../components/ui/Hero';
 import '../styles/pages/AboutPage.scss';
@@ -52,21 +51,7 @@ const AboutPage = () => {
     seo
   } = pageData;
 
-  // Helper function to get icon component
-  const getIcon = (iconName: string) => {
-    switch (iconName) {
-      case 'hammer':
-        return <span className="icon icon-hammer" aria-hidden="true">🔨</span>;
-      case 'shield':
-        return <span className="icon icon-shield" aria-hidden="true">🛡️</span>;
-      case 'star':
-        return <span className="icon icon-star" aria-hidden="true">⭐</span>;
-      case 'handshake':
-        return <span className="icon icon-handshake" aria-hidden="true">🤝</span>;
-      default:
-        return <span className="icon" aria-hidden="true">📋</span>;
-    }
-  };
+
 
   return (
     <>

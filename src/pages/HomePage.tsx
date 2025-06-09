@@ -56,7 +56,6 @@ const HomePage = () => {
     heroSection,
     introSection, 
     featuredServices, 
-    projectsSection, 
     testimonialsSection, 
     ctaSection,
     seo

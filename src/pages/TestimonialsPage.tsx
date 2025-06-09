@@ -4,7 +4,6 @@ import { dataService } from '../services/dataService';
 import type { Testimonial } from '../data/models';
 import Card from '../components/ui/Card';
 import Section from '../components/ui/Section';
-import Button from '../components/ui/Button';
 import Hero from '../components/ui/Hero';
 import '../styles/pages/TestimonialsPage.scss';
 
