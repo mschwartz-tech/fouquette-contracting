@@ -14,10 +14,12 @@
 [context.branch-deploy]
   environment = { NODE_VERSION = "20" }
 
+# SPA catch-all redirect - only redirect if file doesn't exist
 [[redirects]]
   from = "/*"
   to = "/index.html"
   status = 200
+  force = false
 
 [dev]
   command = "npm run dev"

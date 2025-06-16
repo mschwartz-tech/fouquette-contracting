@@ -12,7 +12,7 @@
   "contactInfo": {
     "phone": {
       "label": "Phone",
-      "value": "(651) 555-1234",
+      "value": "(763) 204-0630",
       "icon": "phone"
     },
     "email": {
@@ -22,7 +22,7 @@
     },
     "address": {
       "label": "Office Address",
-      "value": "123 Main Street, Suite 200\nSaint Paul, MN 55101",
+      "value": "8313 173rd Ave SE\nBecker, MN 55308",
       "icon": "location"
     },
     "hours": {
@@ -32,8 +32,8 @@
     }
   },
   "mapSettings": {
-    "latitude": 44.9537,
-    "longitude": -93.0900,
+    "latitude": 45.3956,
+    "longitude": -93.8748,
     "zoom": 15,
     "markerTitle": "Fouquette Contracting"
   },
@@ -121,7 +121,7 @@
       },
       {
         "question": "What areas do you serve in Minnesota?",
-        "answer": "We serve the entire Twin Cities metro area and surrounding communities within a 60-mile radius of Saint Paul."
+        "answer": "We serve the entire Twin Cities metro area and surrounding communities within a 60-mile radius of Becker, MN."
       },
       {
         "question": "How quickly can you start a new project?",
@@ -145,6 +145,6 @@
   "seo": {
     "title": "Contact Us | Fouquette Contracting | Minnesota Masonry & Construction",
     "description": "Get in touch with Fouquette Contracting for all your masonry and construction needs in Minnesota. Contact us for quotes, consultations, or support.",
-    "keywords": "contact masonry contractor, Minnesota construction company, request quote, masonry consultation, construction support, Saint Paul contractor"
+    "keywords": "contact masonry contractor, Minnesota construction company, request quote, masonry consultation, construction support, Becker contractor"
   }
 }

@@ -1,7 +1,7 @@
 {
   "heroSection": {
-    "title": "",
-    "subtitle": "",
+    "title": "Fouquette Contracting",
+    "subtitle": "Premier Masonry & Construction Services in Central Minnesota",
     "logo": "/Hero Logo.png",
     "logoAlt": "Fouquette Contracting Logo",
     "ctaText": "Request a Free Estimate",
@@ -107,7 +107,7 @@
     "backgroundSrc": "/Hero_Background_2.png"
   },
   "seo": {
-    "title": "Fouquette Contracting | Expert Masonry & Construction Services in Minnesota",
+    "title": "Fouquette Contracting | Premier Masonry & Construction Services | Becker, Minnesota",
     "description": "Fouquette Contracting provides high-quality masonry and construction services in Minnesota, specializing in brick and stone work, patios, retaining walls, and more.",
     "keywords": "masonry, construction, brick work, stone masonry, patios, retaining walls, Minnesota contractor"
   }
