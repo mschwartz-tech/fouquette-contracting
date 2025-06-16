@@ -100,7 +100,7 @@ const StructuredData: React.FC<StructuredDataProps> = ({
           "hasOfferCatalog": {
             "@type": "OfferCatalog",
             "name": "Construction Services",
-            "itemListElement": localBusiness.serviceType.map((serviceType, index) => ({
+            "itemListElement": localBusiness.serviceType.map((serviceType) => ({
               "@type": "Offer",
               "itemOffered": {
                 "@type": "Service",
