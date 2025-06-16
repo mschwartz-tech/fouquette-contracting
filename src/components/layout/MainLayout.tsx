@@ -3,7 +3,6 @@ import { Suspense } from 'react';
 import Header from './Header';
 import Footer from './Footer';
 import LoadingSpinner from '../ui/LoadingSpinner';
-import GoogleAnalytics from '../SEO/GoogleAnalytics';
 
 /**
  * MainLayout Component
@@ -15,7 +14,6 @@ import GoogleAnalytics from '../SEO/GoogleAnalytics';
 const MainLayout = () => {
   return (
     <div className="site-wrapper">
-      <GoogleAnalytics measurementId="G-JTQP22BTMM" />
       <Header />
       <main id="main-content" className="main-content">
         <Suspense fallback={
