@@ -1,7 +1,6 @@
 import { useState, useEffect } from 'react';
 import { HelmetProvider } from 'react-helmet-async';
 import ErrorBoundary from './components/ui/ErrorBoundary';
-import GoogleAnalytics from './components/SEO/GoogleAnalytics';
 import AppRouter from './router';
 import './styles/global.scss';
 
@@ -25,7 +24,6 @@ function App() {
   return (
     <ErrorBoundary>
       <HelmetProvider>
-        <GoogleAnalytics measurementId="G-JTQP22BTMM" />
         <AppRouter />
       </HelmetProvider>
     </ErrorBoundary>
