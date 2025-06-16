@@ -1,3 +1,10 @@
 User-agent: *
 Allow: /
-Sitemap: YOUR_WEBSITE_URL_HERE/sitemap.xml
+
+# Block access to admin and private directories
+Disallow: /admin/
+Disallow: /.netlify/
+Disallow: /node_modules/
+
+# Sitemap location
+Sitemap: https://www.fouquettecontracting.com/sitemap.xml
