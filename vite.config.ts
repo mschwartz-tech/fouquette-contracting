@@ -15,13 +15,7 @@ export default defineConfig({
       }
     },
     sourcemap: false,
-    minify: 'terser',
-    terserOptions: {
-      compress: {
-        drop_console: true,
-        drop_debugger: true
-      }
-    }
+    minify: true
   },
   optimizeDeps: {
     include: ['react', 'react-dom', 'react-router-dom', 'react-helmet-async']
