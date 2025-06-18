@@ -25,50 +25,58 @@
   },
   {
     "id": "gallery-4",
-    "src": "/retaining_wall.png",
-    "alt": "Professional stone retaining wall construction",
-    "title": "Stone Retaining Wall",
-    "category": "Retaining Walls",
-    "featured": true
-  },
-  {
-    "id": "gallery-5",
-    "src": "/patio_1.png",
-    "alt": "Beautiful stone patio installation with professional craftsmanship",
-    "title": "Stone Patio Installation",
-    "category": "Patios",
-    "featured": true
-  },
-  {
-    "id": "gallery-6",
-    "src": "/stonework_1.png",
-    "alt": "Expert stonework and masonry construction",
-    "title": "Professional Stonework",
-    "category": "Stone Masonry",
-    "featured": true
-  },
-  {
-    "id": "gallery-7",
-    "src": "/bricklayer_1.png",
-    "alt": "Professional bricklaying and masonry work",
-    "title": "Expert Bricklaying",
-    "category": "Brick Work",
-    "featured": true
-  },
-  {
-    "id": "gallery-8",
     "src": "/gallery_4.jpeg",
     "alt": "Professional exterior stonework and masonry",
     "title": "Exterior Stonework",
     "category": "Commercial",
-    "featured": false
+    "featured": true
   },
   {
-    "id": "gallery-9",
+    "id": "gallery-5",
     "src": "/gallery_5.jpeg",
     "alt": "Expert exterior stonework craftsmanship",
     "title": "Residential Stonework",
     "category": "Residential",
-    "featured": false
+    "featured": true
+  },
+  {
+    "id": "gallery-6",
+    "src": "/placeholder-image-6.jpg",
+    "alt": "Placeholder for additional masonry project photo",
+    "title": "Project Photo 6",
+    "category": "Masonry",
+    "featured": true
+  },
+  {
+    "id": "gallery-7",
+    "src": "/placeholder-image-7.jpg",
+    "alt": "Placeholder for additional masonry project photo",
+    "title": "Project Photo 7",
+    "category": "Masonry",
+    "featured": true
+  },
+  {
+    "id": "gallery-8",
+    "src": "/placeholder-image-8.jpg",
+    "alt": "Placeholder for additional masonry project photo",
+    "title": "Project Photo 8",
+    "category": "Masonry",
+    "featured": true
+  },
+  {
+    "id": "gallery-9",
+    "src": "/placeholder-image-9.jpg",
+    "alt": "Placeholder for additional masonry project photo",
+    "title": "Project Photo 9",
+    "category": "Masonry",
+    "featured": true
+  },
+  {
+    "id": "gallery-10",
+    "src": "/placeholder-image-10.jpg",
+    "alt": "Placeholder for additional masonry project photo",
+    "title": "Project Photo 10",
+    "category": "Masonry",
+    "featured": true
   }
 ]
