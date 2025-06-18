@@ -1,81 +1,97 @@
 [
   {
     "id": "gallery-1",
-    "src": "/Stamped_Walkway_&_Stoop.jpeg",
-    "alt": "Stamped concrete walkway and stoop with decorative pattern",
-    "title": "Stamped Walkway & Stoop",
-    "category": "Concrete Work",
+    "src": "/gallery_1.jpg",
+    "alt": "Professional masonry and construction project by Fouquette Contracting",
+    "title": "Masonry Project 1",
+    "category": "Masonry",
     "featured": true
   },
   {
     "id": "gallery-2",
-    "src": "/Outdoor_Stone_Fireplace.jpeg",
-    "alt": "Custom outdoor stone fireplace in backyard setting",
-    "title": "Outdoor Stone Fireplace",
-    "category": "Stone Masonry",
+    "src": "/gallery_2.jpg",
+    "alt": "Professional masonry and construction project by Fouquette Contracting",
+    "title": "Masonry Project 2",
+    "category": "Masonry",
     "featured": true
   },
   {
     "id": "gallery-3",
-    "src": "/gallery_3.png",
-    "alt": "Custom indoor stone fireplace with expert craftsmanship",
-    "title": "Indoor Stone Fireplace",
-    "category": "Stone Masonry",
+    "src": "/gallery_3.jpg",
+    "alt": "Professional masonry and construction project by Fouquette Contracting",
+    "title": "Masonry Project 3",
+    "category": "Masonry",
     "featured": true
   },
   {
     "id": "gallery-4",
-    "src": "/gallery_4.jpeg",
-    "alt": "Professional exterior stonework and masonry",
-    "title": "Exterior Stonework",
-    "category": "Commercial",
+    "src": "/gallery_4.jpg",
+    "alt": "Professional masonry and construction project by Fouquette Contracting",
+    "title": "Masonry Project 4",
+    "category": "Masonry",
     "featured": true
   },
   {
     "id": "gallery-5",
-    "src": "/gallery_5.jpeg",
-    "alt": "Expert exterior stonework craftsmanship",
-    "title": "Residential Stonework",
-    "category": "Residential",
+    "src": "/gallery_5.jpg",
+    "alt": "Professional masonry and construction project by Fouquette Contracting",
+    "title": "Masonry Project 5",
+    "category": "Masonry",
     "featured": true
   },
   {
     "id": "gallery-6",
-    "src": "/placeholder-image-6.jpg",
-    "alt": "Placeholder for additional masonry project photo",
-    "title": "Project Photo 6",
+    "src": "/gallery_6.jpg",
+    "alt": "Professional masonry and construction project by Fouquette Contracting",
+    "title": "Masonry Project 6",
     "category": "Masonry",
     "featured": true
   },
   {
     "id": "gallery-7",
-    "src": "/placeholder-image-7.jpg",
-    "alt": "Placeholder for additional masonry project photo",
-    "title": "Project Photo 7",
+    "src": "/gallery_7.jpg",
+    "alt": "Professional masonry and construction project by Fouquette Contracting",
+    "title": "Masonry Project 7",
     "category": "Masonry",
     "featured": true
   },
   {
     "id": "gallery-8",
-    "src": "/placeholder-image-8.jpg",
-    "alt": "Placeholder for additional masonry project photo",
-    "title": "Project Photo 8",
+    "src": "/gallery_8.jpg",
+    "alt": "Professional masonry and construction project by Fouquette Contracting",
+    "title": "Masonry Project 8",
     "category": "Masonry",
     "featured": true
   },
   {
     "id": "gallery-9",
-    "src": "/placeholder-image-9.jpg",
-    "alt": "Placeholder for additional masonry project photo",
-    "title": "Project Photo 9",
+    "src": "/gallery_9.jpg",
+    "alt": "Professional masonry and construction project by Fouquette Contracting",
+    "title": "Masonry Project 9",
     "category": "Masonry",
     "featured": true
   },
   {
     "id": "gallery-10",
-    "src": "/placeholder-image-10.jpg",
-    "alt": "Placeholder for additional masonry project photo",
-    "title": "Project Photo 10",
+    "src": "/gallery_10.jpg",
+    "alt": "Professional masonry and construction project by Fouquette Contracting",
+    "title": "Masonry Project 10",
+    "category": "Masonry",
+    "featured": true
+  },
+  {
+    "id": "gallery-11",
+    "src": "/gallery_11.jpg",
+    "alt": "Professional masonry and construction project by Fouquette Contracting",
+    "title": "Masonry Project 11",
+    "category": "Masonry",
+    "featured": true
+  },
+  {
+    "id": "gallery-12",
+    "src": "/gallery_12.jpg",
+    "alt": "Professional masonry and construction project by Fouquette Contracting",
+    "title": "Masonry Project 12",
     "category": "Masonry",
     "featured": true
   }
