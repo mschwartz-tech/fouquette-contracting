@@ -7,6 +7,7 @@ import ImageGallery from '../components/ui/ImageGallery';
 import Button from '../components/ui/Button';
 import Section from '../components/ui/Section';
 import Hero from '../components/ui/Hero';
+import { preloadImages } from '../utils/imageOptimization';
 import '../styles/pages/GalleryPage.scss';
 
 /**
@@ -25,6 +26,11 @@ const GalleryPage = () => {
       try {
         const data = await dataService.getGalleryImages();
         setImages(data);
+        
+        // Preload the first 3 critical images for better performance
+        const criticalImages = data.slice(0, 3).map(img => img.src);
+        preloadImages(criticalImages);
+        
       } catch (error) {
         console.error('Error fetching gallery images:', error);
       } finally {
@@ -121,11 +127,12 @@ const GalleryPage = () => {
             images={images.map(image => ({
               src: image.src,
               alt: image.alt,
-              title: image.title
+              title: image.title,
+              sizes: "(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
             }))}
             responsive={true}
-            aspectRatio="4-3"
-            gap={24}
+            aspectRatio="auto"
+            gap={32}
             className="gallery-grid"
           />
         )}

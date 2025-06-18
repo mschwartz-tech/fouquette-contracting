@@ -25,6 +25,9 @@ export interface GalleryImage {
   src: string;
   alt: string;
   title?: string;
+  width?: number;
+  height?: number;
+  sizes?: string;
 }
 
 interface ImageGalleryProps {
@@ -136,10 +139,19 @@ const ImageGallery = ({
             src={image.src} 
             alt={image.alt} 
             className="image-gallery__img"
-            loading="lazy"
+            loading={index < 6 ? "eager" : "lazy"}
             onLoad={() => handleImageLoad(index)}
-            width="400"
-            height="300"
+            sizes={image.sizes || "(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"}
+            style={{
+              aspectRatio: aspectRatio === 'auto' ? 'auto' : 
+                          aspectRatio === 'square' ? '1 / 1' :
+                          aspectRatio === '16-9' ? '16 / 9' :
+                          aspectRatio === '4-3' ? '4 / 3' : 'auto',
+              objectFit: 'cover',
+              width: '100%',
+              height: 'auto'
+            }}
+            decoding="async"
           />
           {!loadedImages.has(index) && (
             <div className="image-gallery__placeholder" />
@@ -171,6 +183,12 @@ const ImageGallery = ({
               src={images[activeImageIndex].src} 
               alt={images[activeImageIndex].alt} 
               className="image-gallery__lightbox-img"
+              style={{
+                maxWidth: '100%',
+                maxHeight: '100%',
+                objectFit: 'contain'
+              }}
+              decoding="async"
             />
             
             {images[activeImageIndex].title && (
