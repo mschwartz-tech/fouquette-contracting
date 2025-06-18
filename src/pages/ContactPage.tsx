@@ -50,6 +50,8 @@ const ContactPage = () => {
           name="keywords"
           content="contact masonry contractor, masonry quote, construction contact, Minnesota masonry contact"
         />
+        <meta name="robots" content="index, follow" />
+        <meta name="googlebot" content="index, follow" />
         {/* Canonical URL */}
         <link rel="canonical" href={window.location.origin + location.pathname} />
 

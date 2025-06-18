@@ -51,6 +51,8 @@ const GalleryPage = () => {
           name="keywords" 
           content="masonry gallery, project photos, construction portfolio, brick work examples, stone masonry projects"
         />
+        <meta name="robots" content="index, follow" />
+        <meta name="googlebot" content="index, follow" />
         {/* Canonical URL */}
         <link rel="canonical" href={window.location.origin + location.pathname} />
 

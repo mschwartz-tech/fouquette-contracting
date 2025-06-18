@@ -5,6 +5,9 @@
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Fouquette Contracting - Quality Masonry and Construction Services in Minnesota" />
+    <meta name="robots" content="index, follow" />
+    <meta name="googlebot" content="index, follow" />
+    <link rel="canonical" href="https://www.fouquettecontracting.com/" />
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <title>Fouquette Contracting - Masonry & Construction Services</title>
     
@@ -30,18 +33,20 @@
     <meta property="twitter:description" content="Fouquette Contracting - Quality Masonry and Construction Services in Minnesota">
     <meta name="twitter:image" content="https://www.fouquettecontracting.com/logo.webp" />
 
-    <!-- Structured Data (JSON-LD) - Basic LocalBusiness -->
+    <!-- Structured Data (JSON-LD) - Enhanced LocalBusiness -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "LocalBusiness",
+      "@type": ["LocalBusiness", "Contractor"],
       "name": "Fouquette Contracting",
+      "alternateName": "Fouquette Contracting LLC",
       "image": "https://www.fouquettecontracting.com/logo.webp",
       "logo": "https://www.fouquettecontracting.com/logo.webp",
-      "@id": "https://www.fouquettecontracting.com",
+      "@id": "https://www.fouquettecontracting.com/#organization",
       "url": "https://www.fouquettecontracting.com",
       "telephone": "+1-763-204-0630",
       "description": "Quality Masonry and Construction Services in Minnesota, specializing in brickwork, stonework, and concrete solutions.",
+      "slogan": "Quality Craftsmanship, Built to Last",
       "address": {
         "@type": "PostalAddress",
         "streetAddress": "8313 173rd Ave SE",
@@ -55,12 +60,44 @@
         "latitude": "45.3956",
         "longitude": "-93.8748"
       },
+      "areaServed": [
+        {
+          "@type": "City",
+          "name": "Becker",
+          "addressRegion": "MN"
+        },
+        {
+          "@type": "City", 
+          "name": "St. Cloud",
+          "addressRegion": "MN"
+        },
+        {
+          "@type": "City",
+          "name": "Minneapolis",
+          "addressRegion": "MN"
+        },
+        {
+          "@type": "State",
+          "name": "Minnesota"
+        }
+      ],
+      "serviceType": [
+        "Masonry Services",
+        "Brick Work",
+        "Stone Work", 
+        "Concrete Work",
+        "Retaining Walls",
+        "Patios",
+        "Fireplaces",
+        "Driveways",
+        "Foundation Repair"
+      ],
       "openingHoursSpecification": [
         {
           "@type": "OpeningHoursSpecification",
           "dayOfWeek": [
             "Monday",
-            "Tuesday",
+            "Tuesday", 
             "Wednesday",
             "Thursday",
             "Friday"
@@ -69,7 +106,36 @@
           "closes": "17:00"
         }
       ],
-      "priceRange": "$$"
+      "priceRange": "$$",
+      "paymentAccepted": ["Cash", "Check", "Credit Card"],
+      "currenciesAccepted": "USD",
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Masonry and Construction Services",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Brick Work Services"
+            }
+          },
+          {
+            "@type": "Offer", 
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Stone Work Services"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service", 
+              "name": "Concrete Services"
+            }
+          }
+        ]
+      }
     }
     </script>
   </head>

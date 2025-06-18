@@ -49,6 +49,10 @@ const TestimonialsPage = () => {
           name="keywords" 
           content="masonry testimonials, client reviews, customer feedback, masonry references, satisfied clients"
         />
+        <meta name="robots" content="index, follow" />
+        <meta name="googlebot" content="index, follow" />
+        {/* Canonical URL */}
+        <link rel="canonical" href={window.location.origin + location.pathname} />
         {/* Open Graph / Facebook */}
         <meta property="og:type" content="website" />
         <meta property="og:url" content={typeof window !== 'undefined' ? window.location.origin + window.location.pathname : ''} />

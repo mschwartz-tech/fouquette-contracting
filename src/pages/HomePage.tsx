@@ -71,6 +71,8 @@ const HomePage = () => {
             <title>{seo.title}</title>
             <meta name="description" content={seo.description} />
             <meta name="keywords" content={seo.keywords} />
+            <meta name="robots" content="index, follow" />
+            <meta name="googlebot" content="index, follow" />
             {canonicalUrl && <link rel="canonical" href={canonicalUrl} />}
             {/* Open Graph / Facebook */}
             <meta property="og:type" content="website" />

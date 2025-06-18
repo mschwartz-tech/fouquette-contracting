@@ -75,6 +75,8 @@ const ServicesPage = () => {
           name="keywords" 
           content="masonry services, brick work, stone masonry, patios, retaining walls, concrete work, Minnesota contractor"
         />
+        <meta name="robots" content="index, follow" />
+        <meta name="googlebot" content="index, follow" />
         <link rel="canonical" href={canonicalUrl} />
         {/* Open Graph / Facebook */}
         <meta property="og:type" content="website" />
