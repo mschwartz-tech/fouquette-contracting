@@ -26,7 +26,7 @@
   // Aspect ratio variants
   &--aspect-square {
     .image-gallery__item {
-      padding-bottom: 100%;
+      aspect-ratio: 1 / 1;
     }
   }
   

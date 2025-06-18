@@ -131,7 +131,7 @@ const GalleryPage = () => {
               sizes: "(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
             }))}
             responsive={true}
-            aspectRatio="auto"
+            aspectRatio="square"
             gap={32}
             className="gallery-grid"
           />
