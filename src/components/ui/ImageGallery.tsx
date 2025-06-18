@@ -112,6 +112,12 @@ const ImageGallery = ({
     setLoadedImages(prev => new Set(prev).add(index));
   };
 
+  const handleImageError = (index: number) => {
+    console.warn(`Failed to load image at index ${index}: ${images[index]?.src}`);
+    // Still mark as "loaded" to remove loading state even if image failed
+    setLoadedImages(prev => new Set(prev).add(index));
+  };
+
   return (
     <div 
       ref={galleryRef}
@@ -141,6 +147,7 @@ const ImageGallery = ({
             className="image-gallery__img"
             loading={index < 6 ? "eager" : "lazy"}
             onLoad={() => handleImageLoad(index)}
+            onError={() => handleImageError(index)}
             sizes={image.sizes || "(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"}
             style={{
               aspectRatio: aspectRatio === 'auto' ? 'auto' : 

@@ -1,7 +1,7 @@
 [
   {
     "id": "gallery-1",
-    "src": "/gallery_1.jpg",
+    "src": "/gallery_1.png",
     "alt": "Professional masonry and construction project by Fouquette Contracting",
     "title": "Masonry Project 1",
     "category": "Masonry",
@@ -9,7 +9,7 @@
   },
   {
     "id": "gallery-2",
-    "src": "/gallery_2.jpg",
+    "src": "/gallery_2.png",
     "alt": "Professional masonry and construction project by Fouquette Contracting",
     "title": "Masonry Project 2",
     "category": "Masonry",
@@ -17,7 +17,7 @@
   },
   {
     "id": "gallery-3",
-    "src": "/gallery_3.jpg",
+    "src": "/gallery_3.png",
     "alt": "Professional masonry and construction project by Fouquette Contracting",
     "title": "Masonry Project 3",
     "category": "Masonry",
@@ -25,7 +25,7 @@
   },
   {
     "id": "gallery-4",
-    "src": "/gallery_4.jpg",
+    "src": "/gallery_4.png",
     "alt": "Professional masonry and construction project by Fouquette Contracting",
     "title": "Masonry Project 4",
     "category": "Masonry",
@@ -33,7 +33,7 @@
   },
   {
     "id": "gallery-5",
-    "src": "/gallery_5.jpg",
+    "src": "/gallery_5.png",
     "alt": "Professional masonry and construction project by Fouquette Contracting",
     "title": "Masonry Project 5",
     "category": "Masonry",
@@ -41,7 +41,7 @@
   },
   {
     "id": "gallery-6",
-    "src": "/gallery_6.jpg",
+    "src": "/gallery_6.png",
     "alt": "Professional masonry and construction project by Fouquette Contracting",
     "title": "Masonry Project 6",
     "category": "Masonry",
@@ -49,7 +49,7 @@
   },
   {
     "id": "gallery-7",
-    "src": "/gallery_7.jpg",
+    "src": "/gallery_7.png",
     "alt": "Professional masonry and construction project by Fouquette Contracting",
     "title": "Masonry Project 7",
     "category": "Masonry",
@@ -57,7 +57,7 @@
   },
   {
     "id": "gallery-8",
-    "src": "/gallery_8.jpg",
+    "src": "/gallery_8.png",
     "alt": "Professional masonry and construction project by Fouquette Contracting",
     "title": "Masonry Project 8",
     "category": "Masonry",
@@ -65,7 +65,7 @@
   },
   {
     "id": "gallery-9",
-    "src": "/gallery_9.jpg",
+    "src": "/gallery_9.png",
     "alt": "Professional masonry and construction project by Fouquette Contracting",
     "title": "Masonry Project 9",
     "category": "Masonry",
@@ -73,7 +73,7 @@
   },
   {
     "id": "gallery-10",
-    "src": "/gallery_10.jpg",
+    "src": "/gallery_10.png",
     "alt": "Professional masonry and construction project by Fouquette Contracting",
     "title": "Masonry Project 10",
     "category": "Masonry",
@@ -81,7 +81,7 @@
   },
   {
     "id": "gallery-11",
-    "src": "/gallery_11.jpg",
+    "src": "/gallery_11.png",
     "alt": "Professional masonry and construction project by Fouquette Contracting",
     "title": "Masonry Project 11",
     "category": "Masonry",
@@ -89,7 +89,7 @@
   },
   {
     "id": "gallery-12",
-    "src": "/gallery_12.jpg",
+    "src": "/gallery_12.png",
     "alt": "Professional masonry and construction project by Fouquette Contracting",
     "title": "Masonry Project 12",
     "category": "Masonry",
