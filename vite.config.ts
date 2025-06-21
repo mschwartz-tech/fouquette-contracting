@@ -1,9 +1,15 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
+import sitemap from 'vite-plugin-sitemap'
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [react()],
+  plugins: [
+    react(),
+    sitemap({
+      hostname: 'https://www.fouquettecontracting.com',
+    }),
+  ],
   build: {
     rollupOptions: {
       output: {
@@ -27,5 +33,8 @@ export default defineConfig({
   preview: {
     port: 5173,
     host: true
+  },
+  define: {
+    'process.env': {}
   }
 })
