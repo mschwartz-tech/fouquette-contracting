@@ -37,5 +37,29 @@
       "react": "^19.0.0",
       "react-dom": "^19.0.0"
     }
+  },
+  "reactSnap": {
+    "source": "dist",
+    "destination": "dist",
+    "include": [
+      "/",
+      "/about",
+      "/services",
+      "/gallery",
+      "/testimonials",
+      "/faq",
+      "/booking",
+      "/contact"
+    ],
+    "skipThirdPartyRequests": false,
+    "headless": true,
+    "puppeteerArgs": [
+      "--no-sandbox",
+      "--disable-setuid-sandbox"
+    ],
+    "minifyHtml": {
+      "collapseWhitespace": true,
+      "removeComments": true
+    }
   }
 }

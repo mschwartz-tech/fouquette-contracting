@@ -8,6 +8,19 @@ export default defineConfig({
     react(),
     sitemap({
       hostname: 'https://www.fouquettecontracting.com',
+      dynamicRoutes: [
+        '/',
+        '/about',
+        '/services',
+        '/gallery',
+        '/testimonials',
+        '/faq',
+        '/booking',
+        '/contact'
+      ],
+      generateRobotsTxt: false,
+      changefreq: 'weekly',
+      priority: 0.7
     }),
   ],
   build: {
